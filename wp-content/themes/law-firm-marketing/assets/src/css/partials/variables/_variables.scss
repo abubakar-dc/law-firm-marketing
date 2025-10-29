@@ -1,0 +1,363 @@
+:root {
+	/*-------------------------------------------------
+	>> Variables for Spaces
+	-------------------------------------------------*/
+	@include spacing(--lfm_space_2, 2, 2);
+	@include spacing(--lfm_space_4, 4, 4);
+	@include spacing(--lfm_space_6, 6, 6);
+	@include spacing(--lfm_space_8, 8, 8);
+	@include spacing(--lfm_space_12, 12, 10);
+	@include spacing(--lfm_space_16, 16, 12);
+	@include spacing(--lfm_space_20, 20, 16);
+	@include spacing(--lfm_space_24, 24, 20);
+	@include spacing(--lfm_space_30, 30, 24);
+	@include spacing(--lfm_space_36, 36, 30);
+	@include spacing(--lfm_space_48, 48, 36);
+	@include spacing(--lfm_space_72, 72, 44);
+	@include spacing(--lfm_space_96, 96, 52);
+	@include spacing(--lfm_space_128, 128, 64);
+	@include spacing(--lfm_space_156, 156, 72);
+	@include spacing(--lfm_space_200, 200, 84);
+	@include spacing(--lfm_space_236, 236, 98);
+
+	/* -------------------------------------------------
+	>> Variables for Font Sizes
+	------------------------------------------------- */
+
+	@include font_size(--lfm_font_size_12, 12, 11);
+	@include font_size(--lfm_font_size_14, 14, 13);
+	@include font_size(--lfm_font_size_16, 16, 15);
+	@include font_size(--lfm_font_size_18, 18, 17);
+	@include font_size(--lfm_font_size_20, 20, 18);
+	@include font_size(--lfm_font_size_22, 22, 20);
+	@include font_size(--lfm_font_size_24, 24, 20);
+	@include font_size(--lfm_font_size_26, 26, 22);
+	@include font_size(--lfm_font_size_32, 32, 24);
+	@include font_size(--lfm_font_size_40, 40, 26);
+	@include font_size(--lfm_font_size_48, 48, 30);
+	@include font_size(--lfm_font_size_52, 52, 40);
+	@include font_size(--lfm_font_size_60, 60, 45);
+	@include font_size(--lfm_font_size_68, 68, 55);
+	@include font_size(--lfm_font_size_96, 96, 58);
+	@include font_size(--lfm_font_size_105, 105, 62);
+	@include font_size(--lfm_font_size_128, 128, 72);
+	@include font_size(--lfm_my_size, 128, 72);
+
+	/* -------------------------------------------------
+	>> Color variables
+	------------------------------------------------- */
+
+	/*
+	>> Base Colors
+	*/
+
+	// Theme Primary
+	--lfm_color_primary: #000000;
+	--lfm_color_on_primary: #ffffff;
+
+	// Theme Secondary
+	--lfm_color_secondary: #000000;
+
+	// Theme Dark
+	--lfm_black: #000000;
+	--lfm_black_1: #14191f;
+	--lfm_black_2: #606364;
+
+	// Theme Light
+	--lfm_white: #ffffff;
+	--lfm_white_1: #f1f1f1;
+	--lfm_white_2: #f1e9e9;
+	--lfm_white_3: #f7f7f7;
+
+	// Theme Colors
+	--lfm_gray: #e0e0e0;
+	--lfm_gray_1: #e6e6e6;
+	--lfm_gray_2: #eee;
+
+	--lfm_blue: #0013ff;
+	--lfm_blue_1: #9dbaf5;
+
+	--lfm_pink: #ff5fa2;
+	--lfm_lpink: #ffcadc;
+	--lfm_lpink_2: #ffbff9;
+	--lfm_yellow: #fbe74e;
+	--lfm_purple: #8c52f1;
+	--lfm_orange: #de4d2f;
+	--lfm_mgreen: #a4ffa1;
+
+	--lfm_red: #ff0000;
+	--lfm_sea_green: #7af7ff;
+
+	--lfm_transparent: transparent;
+
+	// Text Variations
+	--lfm_regular_text: #14191f;
+	--lfm_dark_text: #14191f;
+	--lfm_white_text: #f7f7f7;
+	--lfm_light_text: #606364;
+
+	// fixed variable Colors
+
+	--lfm_success: #198754;
+	--lfm_info: #0dcaf0;
+	--lfm_warning: #ffc107;
+	--lfm_danger: #dc3545;
+	--lfm_light: #f8f9fa;
+	--lfm_dark: #212529;
+
+	--lfm_signal: #d14b3c;
+	--lfm_signal_bg: #fbede9;
+
+	--lfm_color_background: #ffffff;
+	--lfm_color_on_background: #14191f;
+
+	// Borders
+	--lfm_border: #30353c;
+	--lfm_border_1: #545454;
+	--lfm_border_2: #adadad;
+	--lfm_border_3: #e0e0e0;
+	--lfm_border_4: #14191f;
+
+	/* -------------------------------------------------
+	>> Base Colors
+	>> Base colors are used for essential elements
+	such as the logo, tables, links, blockquote,
+	default buttons styling and this should't conflict
+	with theme colors
+	------------------------------------------------- */
+
+	// text Colors
+	--lfm_body_color: var(--lfm_color_on_background);
+	--lfm_body_bg: var(--lfm_color_background);
+	--lfm_text_strong: var(--lfm_black);
+
+	--lfm_dark_text: var(--lfm_black);
+	--lfm_white_text: var(--lfm_white);
+
+	--lfm_highlight_color: var(--lfm_color_on_primary);
+	--lfm_highlight_bg: var(--lfm_color_primary);
+
+	--lfm_caption: var(--lfm_black_2);
+
+	// Headings
+
+	--lfm_heading_color: inherit;
+	--lfm_heading_link_color: var(--lfm_dark_text);
+	--lfm_heading_link_color_hover: var(--lfm_dark_text);
+
+	// link colors
+	--lfm_link_color: var(--lfm_color_primary);
+	--lfm_link_color_hover: var(--lfm_color_primary);
+	--lfm_link_border_color: var(--lfm_color_primary);
+	--lfm_link_border_color_hover: transparent;
+
+	// lists Colors
+	--lfm_list_ul_marker_color: var(--lfm_color_primary);
+	--lfm_list_ol_marker_color: var(--lfm_color_primary);
+	--lfm_list_marker_bgcolor: var(--lfm_border_4);
+
+	// Blockquote Colors
+	--lfm_blockquote_color: var(--lfm_regular_text);
+	--lfm_blockquote_border_color: var(--lfm_regular_text);
+	--lfm_quote_color: var(--lfm_regular_text);
+	--lfm_blockqoute_cite_color: var(--lfm_light_text);
+
+	// Tables Colors
+	--lfm_table_border_color: var(--lfm_border);
+	--lfm_table_head_border_color: var(--lfm_dark_text);
+	--lfm_table_foot_border_color: var(--lfm_dark_text);
+
+	// Formating
+	--lfm_strong_color: var(--lfm_regular_text);
+	--lfm_underline_border_color: var(--lfm_regular_text);
+	--lfm_abbr_border_color: var(--lfm_regular_text);
+	--lfm_delete_color: var(--lfm_danger);
+	--lfm_insert_color: var(--lfm_success);
+	--lfm_insert_border_color: var(--lfm_success);
+
+	// Code
+	--lfm_code_color: var(--lfm_white_text);
+	--lfm_code_bgcolor: var(--lfm_dark_text);
+	--lfm_pre_color: var(--lfm_white_text);
+	--lfm_pre_bgcolor: var(--lfm_dark_text);
+	--lfm_mark_bgcolor: var(--lfm_dark_text);
+	--lfm_mark_color: var(--lfm_white_text);
+
+	// Graphical elements
+	--lfm_hr_color: var(--lfm_border_2);
+
+	// Form Fields
+
+	--lfm_input_color: var(--lfm_regular_text);
+	--lfm_input_bg: var(--lfm_light_field_bg);
+	--lfm_input_border_color: var(--lfm_border);
+
+	--lfm_input_focus_color: var(--lfm_black);
+	--lfm_input_focus_bgcolor: var(--lfm_white);
+	--lfm_input_focus_border_color: var(--lfm_border_2);
+
+	--lfm_disabled_input_bgcolor: var(--lfm_field_bg);
+	--lfm_disabled_input_border_color: var(--lfm_border_1);
+
+	--lfm_placeholder_color: var(--lfm_light_text);
+	--lfm_range_track_bgcolor: var(--lfm_field_bg);
+	--lfm_range_thumb_bgcolor: var(--lfm_color_primary);
+	--lfm_color_field_border_color: var(--lfm_border);
+	--lfm_color_field_bgcolor: var(--lfm_field_bg);
+	--lfm_radio_color: var(--lfm_regular_text);
+	--lfm_radio_border_color: var(--lfm_border);
+	--lfm_radio_bgcolor: var(--lfm_field_bg);
+	--lfm_radio_after_bgcolor: var(--lfm_color_primary);
+	--lfm_checkbox_color: var(--lfm_regular_text);
+	--lfm_checkbox_border_color: var(--lfm_border);
+	--lfm_checkbox_bgcolor: var(--lfm_field_bg);
+	--lfm_checkbox_after_bgcolor: var(--lfm_color_primary);
+	--lfm_progress_bgcolor: var(--lfm_field_bg);
+	--lfm_progress_value_bgcolor: var(--lfm_color_primary);
+	--lfm_meter_bgcolor: var(--lfm_field_bg);
+	--lfm_meter_value_bgcolor: var(--lfm_color_primary);
+
+	// Button
+	--lfm_button_color: var(--lfm_white_text);
+	--lfm_button_bgcolor: var(--lfm_color_primary);
+	--lfm_button_color_hover: var(--lfm_dark_text);
+	--lfm_button_bgcolor_hover: var(--lfm_transparent);
+	--lfm_button_border_color: var(--lfm_color_primary);
+	--lfm_button_border_color_hover: var(--lfm_border);
+
+	--lfm_reset_button_bgcolor: var(--lfm_button_bgcolor);
+	--lfm_reset_button_color: var(--lfm_white_text);
+
+	// Buttons layer
+	--lfm_theme_btn_color: var(--lfm_button_color);
+	--lfm_theme_btn_bgcolor: var(--lfm_button_bgcolor);
+	--lfm_theme_btn_color_hover: var(--lfm_button_color_hover);
+	--lfm_theme_btn_bgcolor_hover: var(--lfm_button_bgcolor_hover);
+	--lfm_theme_btn_border_color: var(--lfm_button_border_color);
+	--lfm_theme_btn_border_color_hover: var(--lfm_button_border_color_hover);
+
+	// --lfm_wp_btn_color: var(--lfm_white_text);
+	// --lfm_wp_btn_bgcolor: var(--lfm_button_bg);
+
+	// --lfm_wp_outline_btn_color: var(--lfm_white_text);
+	// --lfm_wp_outline_btn_border_color: var(--lfm_dark_text);
+	// --lfm_wp_outline_btn_bgcolor: var(--lfm_dark_text);
+
+	// Date Picker
+	--lfm_datepicker_bg_color: var(--lfm_gray);
+	--lfm_datepicker_select_bgcolor: var(--lfm_white);
+	--lfm_datepicker_link_color: var(--lfm_color_secondary);
+	--lfm_datepicker_link_active_color: var(--lfm_color_primary);
+	--lfm_datepicker_calendar: var(--lfm_white_text);
+	--lfm_datepicker_th_bgcolor: var(--lfm_border_1);
+	--lfm_datepicker_even_tr_td_bgcolor: var(--lfm_border_1);
+	--lfm_datepicker_border_color: var(--lfm_border_1);
+	--lfm_datepicker_date_color: var(--lfm_dark_text);
+
+	// Errors & Confirmation
+	--lfm_valiation_error_bg_color: var(--lfm_danger_bg);
+	--lfm_valiation_message_color: var(--lfm_danger);
+	--lfm_error_field_border_color: var(--lfm_danger);
+	--lfm_valiation_error_color: var(--lfm_danger);
+	--lfm_confirmation_message_bgcolor: var(--lfm_success_bg);
+	--lfm_confirmation_message_color: var(--lfm_dark_text);
+	--lfm_confirmation_message_border_color: var(--lfm_danger);
+	--lfm_required_text_color: var(--lfm_danger);
+	--lfm_invalid_error_border_color: var(--lfm_danger);
+	--lfm_hubspot_error_label_color: var(--lfm_danger);
+	--lfm_hubspot_required_color: var(--lfm_danger);
+	--lfm_fileupload_rule_color: var(--lfm_light_text);
+	--lfm_error_menu_color: var(--lfm_dark_text);
+
+	// Accessibility
+	--lfm_acc_btn_color: var(--lfm_white_text);
+	--lfm_acc_btn_bgcolor: var(--lfm_button_bg);
+	--lfm_acc_btn_shadow: var(--lfm_danger);
+	--lfm_acc_outline: var(--lfm_black);
+
+	// Comments Box
+	--lfm_comments_reply_btn_bgcolor: var(--lfm_button_bg);
+	--lfm_comments_reply_btn_color: var(--lfm_white_text);
+	--lfm_comments_reply_btn_bgcolor_hover: var(--lfm_button_bg_hover);
+	--lfm_comments_reply_btn_color_hover: var(--lfm_white_text);
+	--lfm_comment_meta_color: var(--lfm_dark_text);
+	--lfm_comment_metadata_color: var(--lfm_light_text);
+	--lfm_comments_list_border_color: var(--lfm_border);
+	--lfm_widget_comments_meta_color: var(--lfm_light_text);
+
+	// Pagination
+	--lfm_pagination_bgcolor: var(--lfm_blue_1);
+	--lfm_pagination_color: var(--lfm_white);
+	--lfm_pagination_color_hover: var(--lfm_white);
+	--lfm_pagination_bgcolor_hover: var(--lfm_border_1);
+	--lfm_pagination_bgcolor_current: var(--lfm_border_1);
+	--lfm_pagination_color_current: var(--lfm_white);
+	--lfm_pagination_first_bgcolor: var(--lfm_border_1);
+	--lfm_pagination_first_color: var(--lfm_dark_text);
+	--lfm_pagination_border: var(--lfm_transparent);
+
+	// Widgets
+	--lfm_widget_latest_post_meta_color: var(--lfm_danger);
+	--lfm_widget_rss_feed_meta_color: var(--lfm_danger);
+	--lfm_widget_search_button_color: var(--lfm_pure_black);
+	--lfm_wp_table_block_stripe_bg_color: var(--lfm_gray);
+
+	// Breadcrumbs
+	--lfm_breadcrumb_color: var(--lfm_pure_black);
+	--lfm_breadcrumb_link_color: var(--lfm_pure_black);
+	--lfm_breadcrumb_border_color: transparent;
+	--lfm_breadcrumb_border_color_hover: var(--lfm_pure_black);
+	--lfm_breadcrumb_span_color: var(--lfm_pure_black);
+
+	// Header
+	--lfm_header_bgcolor: var(--lfm_transparent);
+	--lfm_header_color: var(--lfm_black);
+	--lfm_header_color_hover: var(--lfm_black);
+	--lfm_header_bgcolor_sticky: var(--lfm_white);
+	--lfm_header_nav_border_color: var(--lfm_dark_text);
+
+	--lfm_header_submenu_bgcolor: var(--lfm_gray);
+	--lfm_header_submenu_color: var(--lfm_header_color);
+	--lfm_header_submenu_color_hover: var(--lfm_header_color_hover);
+
+	--lfm_header_mobile_color: var(--lfm_dark_text);
+	--lfm_header_mobile_submenu_color: var(--lfm_dark_text);
+
+	--lfm_nav_overlay_bgcolor: var(--lfm_white);
+	--lfm_mobile_nav_icon_bgcolor: var(--lfm_dark_text);
+	--lfm_abbr_border: var(--lfm_dark_text);
+
+	// Top Bar
+	--lfm_topbar_bgcolor: var(--lfm_color_primary);
+	--lfm_topbar_color: var(--lfm_white);
+	--lfm_topbar_link_color: var(--lfm_white);
+
+	// Footer
+	--lfm_footer_bgcolor: var(--lfm_dark_text);
+	--lfm_footer_color: var(--lfm_white_text);
+
+	--lfm_footer_color_hover: var(--lfm_white_text);
+
+	--lfm_f_nav_color: var(--lfm_footer_color);
+	--lfm_f_nav_color_hover: var(--lfm_footer_color_hover);
+	--lfm_f_nav_border_color: var(--lfm_footer_color);
+	--lfm_f_nav_border_color_hover: var(--lfm_footer_color_hover);
+
+	--lfm_copyright_color: var(--lfm_white_text);
+	--lfm_legal_nav_color: var(--lfm_white_text);
+	--lfm_legal_nav_border_color: var(--lfm_white_text);
+	--lfm_legal_nav_border_color_hover: var(--lfm_white_text);
+	--lfm_legal_text_color: var(--lfm_white_text);
+
+	// Containers
+	--lfm_ctn_red: var(--lfm_red);
+	--lfm_ctn_black: var(--lfm_black);
+	--lfm_ctn_sea_green: var(--lfm_sea_green);
+
+	// style variations
+
+	--lfm_style_bg: #821212;
+	--lfm_style_text: #000000;
+	--lfm_style_link: #000000;
+	--lfm_style_button: #00a4eb;
+}

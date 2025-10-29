@@ -1,0 +1,76 @@
+/****
+ *
+ * containers
+ *
+****/
+
+.wrapper {
+	max-width: 1440px;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.ctn-1680 {
+	.wrapper {
+		max-width: 1680px;
+		width: 100%;
+	}
+}
+
+.ctn-1260 {
+	.wrapper {
+		max-width: 1260px;
+		width: 100%;
+	}
+}
+
+.ctn-990 {
+	.wrapper {
+		max-width: 990px;
+	}
+}
+
+.ctn-760 {
+	.wrapper {
+		max-width: 760px;
+	}
+}
+
+.ctn-full-width {
+	.wrapper {
+		max-width: 100%;
+		width: 100%;
+	}
+}
+
+.ctn-black {
+	background-color: var(--lfm_black);
+	color: var(--lfm_white);
+
+	h1,
+	.heading-1,
+	h2,
+	.heading-2,
+	h3,
+	.heading-3,
+	h4,
+	.heading-4,
+	h5,
+	.heading-5,
+	h6,
+	.heading-6,
+	p,
+	li,
+	ul,
+	ol {
+		color: var(--lfm_white);
+	}
+	::selection {
+		background-color: var(--lfm_white);
+		color: var(--lfm_black);
+	}
+}
+
+.ctn-gray {
+	background-color: var(--lfm_white_1);
+}

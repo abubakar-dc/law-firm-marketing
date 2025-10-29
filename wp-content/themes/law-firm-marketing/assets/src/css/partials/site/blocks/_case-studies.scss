@@ -1,0 +1,56 @@
+.case-studies {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	row-gap: var(--lfm_space_128);
+}
+
+.case-study-item {
+	width: 46%;
+	position: relative;
+
+	&:nth-child(8n + 2) {
+		margin-top: var(--lfm_space_96);
+	}
+	&:nth-child(8n + 3) {
+		width: 90%;
+		.case-study-item-image {
+			aspect-ratio: 1475 / 790;
+		}
+	}
+	&:nth-child(8n + 4) {
+		margin-top: var(--lfm_space_96);
+	}
+
+	&:nth-child(8n + 6) {
+		width: 90%;
+	}
+
+	a.no-link-style,
+	a.no-link-style:visited {
+		padding: 0;
+		border: 0;
+		display: block;
+		position: absolute;
+		inset: 0;
+		margin: auto;
+	}
+
+	&:hover {
+		.case-study-item-image img {
+			transform: scale(1.05);
+		}
+	}
+}
+
+.case-study-item-image {
+	aspect-ratio: 1 / 1;
+	border-radius: 10px;
+	overflow: hidden;
+
+	img {
+		transition: all 0.3s ease-in-out;
+		will-change: transform;
+		transform-origin: center;
+	}
+}

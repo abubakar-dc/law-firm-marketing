@@ -1,0 +1,131 @@
+.hero-section {
+	transition: all 0.3s ease-in-out;
+	background-color: var(--lfm_white_1);
+	padding-top: var(--lfm_space_128);
+}
+
+.hero-default.hero-home {
+	padding-top: calc(var(--lfm_space_200) + 11px);
+}
+
+.hero-ctn {
+	padding: 80px 0 60px;
+}
+.hero-default-content {
+	position: relative;
+	max-width: max-content;
+}
+
+.hero-default-image {
+	position: relative;
+}
+
+.hero-image.image-cover {
+	aspect-ratio: 1680 / 836;
+	border-radius: 8px;
+	overflow: hidden;
+	position: relative;
+}
+
+.hero-default-image:has(a.hero-video-popup:hover) .video-btn {
+	transform: scale(1.1);
+}
+
+.video-btn {
+	width: 124px;
+	height: 124px;
+	position: absolute;
+	inset: 0;
+	margin: auto;
+	transition: all 0.3s ease-in-out;
+	transform-origin: center;
+	will-change: transform;
+
+	img {
+		position: absolute;
+		inset: 0;
+		margin: auto;
+	}
+
+	img.video-inner-play {
+		position: relative;
+		z-index: 3;
+	}
+
+	img.video-outer {
+		animation: rotation 15s linear infinite;
+	}
+}
+
+a.hero-video-popup,
+a.hero-video-popup:visited {
+	position: absolute;
+	inset: 0;
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+	padding: 0;
+	border: 0;
+}
+
+.hero-default-image:hover .video-btn {
+	transform: scale(1.05);
+}
+
+@keyframes rotation {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(-360deg);
+	}
+}
+
+.mfp-iframe-holder button.mfp-close {
+	position: fixed;
+	top: 24px;
+	right: 24px;
+	padding: 0;
+	margin: 0;
+	border-radius: 6px;
+	background-color: var(--lfm_white);
+	background-image: url("../images/topbar-cross-icon.svg");
+	background-repeat: no-repeat;
+	background-size: 50% 50%;
+	background-position: center;
+	opacity: 1;
+}
+
+.hero-tags {
+	.tag-sea-green {
+		top: 45%;
+		left: -23px;
+		transform: rotate(-23.04deg);
+	}
+
+	.tag-yellow {
+		transform: rotate(15deg);
+		top: 6px;
+		right: -34px;
+	}
+}
+
+.tag {
+	padding: 8px 10px;
+	font-size: var(--lfm_font_size_20);
+	color: var(--lfm_black);
+	line-height: 1;
+	@include font(gothic, black);
+	width: max-content;
+	background-color: var(--lfm_yellow);
+	position: absolute;
+
+	&.tag-sea-green {
+		background-color: var(--lfm_sea_green);
+	}
+}
+
+.mb-0 {
+	margin-bottom: 0;
+}

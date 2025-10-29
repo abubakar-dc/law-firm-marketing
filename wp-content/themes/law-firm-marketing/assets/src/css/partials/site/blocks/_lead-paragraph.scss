@@ -1,0 +1,16 @@
+.lead-paragraph-ctn {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+.lead-content {
+	align-self: flex-end;
+	width: 52.4%;
+	margin-right: calc(var(--lfm_space_96) + 3px);
+	@include font(manrope, med);
+
+	p {
+		margin-bottom: calc(var(--lfm_space_30) + 8px);
+	}
+}

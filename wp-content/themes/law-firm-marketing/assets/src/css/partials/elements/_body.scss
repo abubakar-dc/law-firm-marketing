@@ -1,0 +1,35 @@
+/* -------------------------------------------------
+>> Base Styles
+---------------------------------------------------
+>> Edit these styles as required
+------------------------------------------------- */
+
+body {
+	@include font(manrope, reg);
+	transition: all 0.3s ease-in-out;
+	position: relative;
+	font-size: var(--lfm_font_size_18);
+	color: var(--lfm_body_color);
+	background-color: var(--lfm_body_bg);
+	line-height: 1.5;
+
+	&.have-topbar {
+		padding-top: var(--lfm_header-height);
+	}
+}
+
+p {
+	margin: 0 0 30px;
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+}
+
+::selection {
+	color: var(--lfm_highlight_color);
+	background-color: var(--lfm_highlight_bg);
+}
+
+strong {
+	color: var(--lfm_text_strong) !important;
+}

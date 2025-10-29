@@ -1,0 +1,65 @@
+.team-member {
+	display: grid;
+	@include fluidColumns(2, 350px, 5%);
+	row-gap: var(--lfm_space_30);
+	margin-bottom: var(--lfm_space_96);
+
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+
+	.team-member-image {
+		order: 1;
+		border-radius: 8px;
+		overflow: hidden;
+	}
+
+	.team-member-info {
+		order: 2;
+	}
+
+	&:nth-child(even) {
+		align-items: flex-end;
+
+		.designation {
+			background-color: var(--lfm_yellow);
+		}
+
+		.team-member-image {
+			order: 2;
+		}
+
+		.team-member-info {
+			order: 1;
+		}
+	}
+}
+
+.designation {
+	width: max-content;
+	padding: 10px;
+	font-size: var(--lfm_font_size_16);
+	background-color: var(--lfm_mgreen);
+	color: var(--lfm_black);
+	@include font(manrope, med);
+	letter-spacing: 0;
+	line-height: 1;
+}
+
+.team-member-info {
+	padding-top: 20px;
+}
+
+.team-section-heading {
+	position: relative;
+	max-width: max-content;
+	margin: auto;
+
+	.tag {
+		top: -5px;
+		left: 13%;
+		transform: translateX(-50%);
+		background-color: var(--lfm_sea_green);
+		transform: rotate(-9.9deg);
+	}
+}

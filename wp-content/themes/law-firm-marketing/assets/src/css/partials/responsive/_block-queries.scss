@@ -1,42 +1,108 @@
+@media only screen and (min-width: 1346px) and (max-width: 1439px) {
+	.hero-default.hero-home {
+		padding-top: var(--lfm_space_96);
+	}
+}
+
+@media only screen and (max-width: 1280px) {
+	.lead-content {
+		width: 82.4%;
+	}
+
+	.section-head.d-flex {
+		flex-wrap: wrap;
+	}
+
+	.section-head-heading,
+	.section-head-paragraph {
+		width: 100%;
+	}
+
+	.stats-ctn .heading-2 .tag {
+		left: 100px;
+	}
+
+	.services-heading .tag {
+		top: 0;
+		left: 31%;
+	}
+
+	.hero-tags .tag-yellow {
+		top: 6px;
+		right: auto;
+		left: 50%;
+	}
+
+	.section-head .heading-2 {
+		width: 100%;
+	}
+}
+
 @media only screen and (min-width: 1180px) and (max-width: 1345px) {
-	// code will be starts from here
 }
 
 @media only screen and (min-width: 1004px) and (max-width: 1179px) {
-	// code will be starts from here
 }
 
 @media only screen and (max-width: 1003px) {
-	// code will be starts from here
+	.case-study-item,
+	.case-study-item:nth-child(8n + 6),
+	.case-study-item:nth-child(8n + 3) {
+		width: 100%;
+		position: relative;
+	}
+
+	.case-study-item:nth-child(8n + 4),
+	.case-study-item:nth-child(8n + 2) {
+		margin-top: 0;
+	}
+
+	.text-sliders {
+		padding-bottom: var(--lfm_space_96);
+	}
+
+	.inner-slider {
+		margin-top: -30px;
+	}
+
+	.services-heading .tag {
+		top: -20px;
+		left: 21%;
+	}
+
+	.team-member:nth-child(even) {
+		.team-member-info {
+			order: 2;
+		}
+		.team-member-image {
+			order: 1;
+		}
+	}
 }
 
 @media only screen and (min-width: 748px) and (max-width: 1003px) {
-	// code will be starts from here
 }
 
 @media only screen and (max-width: 747px) {
-	.hero-default {
-		&.with-image {
-
-			.hero-default-content,
-			.hero-default-image {
-				width: 100%;
-			}
-		}
-
+	.lead-heading-area + .s-96 {
+		height: 32px !important;
 	}
 
-	// at block
-	.iat-image.column {
-		margin-top: 30px;
+	.lead-content {
+		margin-right: 0;
+		width: 100%;
+	}
+
+	.section-head-heading .heading-2 .tag {
+		top: -30px;
+		left: 20%;
+		transform: rotate(-15deg);
 	}
 
 	// lists
 	ul.children,
 	ol.children {
-
 		li {
-
 			&.depth-2,
 			&.depth-3,
 			&.depth-4,
@@ -69,9 +135,18 @@
 }
 
 @media only screen and (min-width: 460px) and (max-width: 747px) {
-	// code will be starts from here
 }
 
 @media only screen and (max-width: 459px) {
+	.team-section-heading .tag {
+		top: -30px;
+	}
+
+	.hero-tags .tag-sea-green {
+		top: auto;
+		left: -23px;
+		transform: rotate(16.96deg);
+		bottom: -20px;
+	}
 	// code will be starts from here
 }

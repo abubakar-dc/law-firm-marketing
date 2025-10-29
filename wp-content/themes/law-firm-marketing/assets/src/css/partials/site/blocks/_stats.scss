@@ -1,0 +1,21 @@
+.stat-column {
+	text-align: center;
+}
+
+.stat-number.heading-2 {
+	line-height: 1.1;
+	letter-spacing: 0;
+	padding-bottom: var(--lfm_space_36);
+	position: relative;
+	&::after {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		width: 104px;
+		height: 2px;
+		margin: auto;
+		background-color: var(--lfm_yellow_1);
+	}
+}

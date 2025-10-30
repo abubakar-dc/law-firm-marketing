@@ -244,7 +244,17 @@ jQuery( function() {
 		reset: false,
 	} );
 
-	ScrollReveal().reveal( '.hero-default-image,.hero-default-content', {
+	ScrollReveal().reveal( '.hero-default-image', {
+		delay: 600,
+		duration: 400,
+		distance: '20px',
+		opacity: 0,
+		easing: 'ease-in-out',
+		reset: false,
+		scale: 0.98,
+	} );
+
+	ScrollReveal().reveal( '.hero-default-content', {
 		delay: 600,
 		duration: 400,
 		distance: '20px',
@@ -272,6 +282,7 @@ jQuery( function() {
 		reset: false,
 
 	} );
+
 	ScrollReveal().reveal( '.stat-column,.faq-item,.case-study-item', {
 		duration: 600,
 		distance: '20px',
@@ -281,7 +292,8 @@ jQuery( function() {
 		reset: false,
 
 	} );
-	ScrollReveal().reveal( '.footer-nav li', {
+
+	ScrollReveal().reveal( '.footer-nav li,.widget-row,.social-link', {
 		duration: 600,
 		distance: '20px',
 		opacity: 0,

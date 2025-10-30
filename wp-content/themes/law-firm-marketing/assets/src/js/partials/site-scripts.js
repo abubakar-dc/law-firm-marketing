@@ -168,5 +168,71 @@ jQuery( function() {
 		pauseOnHover: false,
 		swipe: false,
 	} );
+
+	if ( jQuery( '.stat-number' ).length > 0 ) {
+		const $statNumbers = jQuery( '.stat-number' );
+
+		function animateCounter( $element ) {
+			const text = $element.text().trim();
+			const numericText = text.match( /[0-9]+(?:\.[0-9]+)?/ )[ 0 ];
+			const prefix = text.startsWith( '#' )
+				? '#'
+				: text.replace( numericText, '' ).trim().startsWith( '#' )
+					? '#'
+					: '';
+			const suffix = text.replace( prefix + numericText, '' ).trim();
+			const targetValue = parseFloat( numericText );
+			if ( isNaN( targetValue ) ) {
+				return;
+			}
+
+			const startValue = 0;
+			const duration = 1500;
+			const totalFrames = duration / ( 1000 / 60 );
+			const increment = ( targetValue - startValue ) / totalFrames;
+			let animatedValue = startValue;
+
+			const decimalPlaces = numericText.includes( '.' )
+				? numericText.split( '.' )[ 1 ].length
+				: 0;
+
+			const updateCounter = () => {
+				animatedValue += increment;
+				if ( animatedValue >= targetValue ) {
+					$element.text(
+						prefix + targetValue.toFixed( decimalPlaces ) + suffix,
+					);
+				} else {
+					$element.text(
+						prefix + animatedValue.toFixed( decimalPlaces ) + suffix,
+					);
+					requestAnimationFrame( updateCounter );
+				}
+			};
+			requestAnimationFrame( updateCounter );
+		}
+
+		const isInViewport = ( element ) => {
+			const rect = element[ 0 ].getBoundingClientRect();
+			return (
+				rect.bottom >= 0 &&
+				rect.top <=
+					( window.innerHeight ||
+						document.documentElement.clientHeight )
+			);
+		};
+
+		jQuery( window )
+			.on( 'scroll resize', () => {
+				$statNumbers.each( function() {
+					const $this = jQuery( this );
+					if ( isInViewport( $this ) && ! $this.hasClass( 'animated' ) ) {
+						animateCounter( $this );
+						$this.addClass( 'animated' );
+					}
+				} );
+			} )
+			.trigger( 'scroll' );
+	}
 } );
 

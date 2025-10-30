@@ -15,6 +15,7 @@
 			padding: 0;
 			background: transparent;
 			width: 100%;
+			display: block;
 
 			li {
 				padding: 0;
@@ -35,6 +36,7 @@
 					display: inline-block;
 					border-bottom: none;
 					position: relative;
+					font-size: var(--lfm_font_size_24);
 				}
 
 				&.current-menu-item > a,
@@ -106,14 +108,6 @@
 
 		.nav-container {
 			display: block;
-		}
-	}
-
-	body.have-topbar {
-		.nav-overlay {
-			top: calc(
-				var(--lfm_header-height) + var(--lfm_header-wrapper-default)
-			);
 		}
 	}
 
@@ -257,6 +251,14 @@
 	li.menu-item-has-children.active > .submenu-icon::before {
 		height: 0;
 		top: 18px;
+	}
+
+	.no-overflow {
+		.header-section {
+			background-color: var(--lfm_white);
+			position: fixed;
+			top: 0;
+		}
 	}
 
 	.no-overflow .logged-in.admin-bar {

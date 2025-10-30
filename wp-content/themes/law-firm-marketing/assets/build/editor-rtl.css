@@ -496,13 +496,12 @@ Mixin for transition
   --lfm_font_size_32: clamp(24 * 1px, 8 / 806 * (100vw - 474 * 1px) + 24 * 1px, 32 * 1px);
   --lfm_font_size_40: clamp(26 * 1px, 14 / 806 * (100vw - 474 * 1px) + 26 * 1px, 40 * 1px);
   --lfm_font_size_48: clamp(30 * 1px, 18 / 806 * (100vw - 474 * 1px) + 30 * 1px, 48 * 1px);
-  --lfm_font_size_52: clamp(40 * 1px, 12 / 806 * (100vw - 474 * 1px) + 40 * 1px, 52 * 1px);
-  --lfm_font_size_60: clamp(45 * 1px, 15 / 806 * (100vw - 474 * 1px) + 45 * 1px, 60 * 1px);
-  --lfm_font_size_68: clamp(55 * 1px, 13 / 806 * (100vw - 474 * 1px) + 55 * 1px, 68 * 1px);
-  --lfm_font_size_96: clamp(58 * 1px, 38 / 806 * (100vw - 474 * 1px) + 58 * 1px, 96 * 1px);
-  --lfm_font_size_105: clamp(62 * 1px, 43 / 806 * (100vw - 474 * 1px) + 62 * 1px, 105 * 1px);
-  --lfm_font_size_128: clamp(72 * 1px, 56 / 806 * (100vw - 474 * 1px) + 72 * 1px, 128 * 1px);
-  --lfm_my_size: clamp(72 * 1px, 56 / 806 * (100vw - 474 * 1px) + 72 * 1px, 128 * 1px);
+  --lfm_font_size_52: clamp(30 * 1px, 22 / 806 * (100vw - 474 * 1px) + 30 * 1px, 52 * 1px);
+  --lfm_font_size_60: clamp(30 * 1px, 30 / 806 * (100vw - 474 * 1px) + 30 * 1px, 60 * 1px);
+  --lfm_font_size_68: clamp(32 * 1px, 36 / 806 * (100vw - 474 * 1px) + 32 * 1px, 68 * 1px);
+  --lfm_font_size_96: clamp(38 * 1px, 58 / 806 * (100vw - 474 * 1px) + 38 * 1px, 96 * 1px);
+  --lfm_font_size_105: clamp(42 * 1px, 63 / 806 * (100vw - 474 * 1px) + 42 * 1px, 105 * 1px);
+  --lfm_font_size_128: clamp(48 * 1px, 80 / 806 * (100vw - 474 * 1px) + 48 * 1px, 128 * 1px);
   /* -------------------------------------------------
   >> Color variables
   ------------------------------------------------- */
@@ -528,6 +527,7 @@ Mixin for transition
   --lfm_lpink: #ffcadc;
   --lfm_lpink_2: #ffbff9;
   --lfm_yellow: #fbe74e;
+  --lfm_yellow_1: #ffec43;
   --lfm_purple: #8c52f1;
   --lfm_orange: #de4d2f;
   --lfm_mgreen: #a4ffa1;
@@ -2195,7 +2195,10 @@ Mixin for transition
   >> Basic styles for Text slider Block
   -------------------------------------------------*/
   /*-------------------------------------------------
-  >> Basic styles for Text slider Block
+  >> Basic styles for Talk Block
+  -------------------------------------------------*/
+  /*-------------------------------------------------
+  >> Basic styles for Text stats Block
   -------------------------------------------------*/
   /* Forms */
   /* -------------------------------------------------
@@ -3241,6 +3244,9 @@ Mixin for transition
 .acf-block-preview .case-study-item:nth-child(8n+6) {
   width: 90%;
 }
+.acf-block-preview .case-study-item:nth-child(8n+6) .case-study-item-image {
+  aspect-ratio: 1475/790;
+}
 .acf-block-preview .case-study-item a.no-link-style,
 .acf-block-preview .case-study-item a.no-link-style:visited {
   padding: 0;
@@ -3328,6 +3334,26 @@ Mixin for transition
 }
 .acf-block-preview .arrow-talk {
   margin-right: 5px;
+}
+.acf-block-preview .stat-column {
+  text-align: center;
+}
+.acf-block-preview .stat-number.heading-2 {
+  line-height: 1.1;
+  letter-spacing: 0;
+  padding-bottom: var(--lfm_space_36);
+  position: relative;
+}
+.acf-block-preview .stat-number.heading-2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 104px;
+  height: 2px;
+  margin: auto;
+  background-color: var(--lfm_yellow_1);
 }
 .acf-block-preview form {
   margin: 0 0 20px;
@@ -4113,13 +4139,78 @@ Mixin for transition
 .acf-block-preview .wpcf7-response-output {
   margin: 0 !important;
 }
-@media only screen and (max-width: 747px) {
-  .acf-block-preview .hero-default.with-image .hero-default-content,
-  .acf-block-preview .hero-default.with-image .hero-default-image {
+@media only screen and (min-width: 1346px) and (max-width: 1439px) {
+  .acf-block-preview .hero-default.hero-home {
+    padding-top: var(--lfm_space_96);
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .acf-block-preview .lead-content {
+    width: 82.4%;
+  }
+  .acf-block-preview .section-head.d-flex {
+    flex-wrap: wrap;
+  }
+  .acf-block-preview .section-head-heading,
+  .acf-block-preview .section-head-paragraph {
     width: 100%;
   }
-  .acf-block-preview .iat-image.column {
-    margin-top: 30px;
+  .acf-block-preview .stats-ctn .heading-2 .tag {
+    right: 100px;
+  }
+  .acf-block-preview .services-heading .tag {
+    top: 0;
+    right: 31%;
+  }
+  .acf-block-preview .hero-tags .tag-yellow {
+    top: 6px;
+    left: auto;
+    right: 50%;
+  }
+  .acf-block-preview .section-head .heading-2 {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 1003px) {
+  .acf-block-preview .case-study-item,
+  .acf-block-preview .case-study-item:nth-child(8n+6),
+  .acf-block-preview .case-study-item:nth-child(8n+3) {
+    width: 100%;
+    position: relative;
+  }
+  .acf-block-preview .case-study-item:nth-child(8n+4),
+  .acf-block-preview .case-study-item:nth-child(8n+2) {
+    margin-top: 0;
+  }
+  .acf-block-preview .text-sliders {
+    padding-bottom: var(--lfm_space_96);
+  }
+  .acf-block-preview .inner-slider {
+    margin-top: -30px;
+  }
+  .acf-block-preview .services-heading .tag {
+    top: -20px;
+    right: 21%;
+  }
+  .acf-block-preview .team-member:nth-child(even) .team-member-info {
+    order: 2;
+  }
+  .acf-block-preview .team-member:nth-child(even) .team-member-image {
+    order: 1;
+  }
+}
+@media only screen and (max-width: 747px) {
+  .acf-block-preview .lead-heading-area + .s-96 {
+    height: 32px !important;
+  }
+  .acf-block-preview .lead-content {
+    margin-left: 0;
+    width: 100%;
+  }
+  .acf-block-preview .section-head-heading .heading-2 .tag {
+    top: -30px;
+    right: 20%;
+    transform: rotate(15deg);
   }
   .acf-block-preview ul.children li.depth-2, .acf-block-preview ul.children li.depth-3, .acf-block-preview ul.children li.depth-4, .acf-block-preview ul.children li.depth-5,
   .acf-block-preview ol.children li.depth-2,
@@ -4145,6 +4236,18 @@ Mixin for transition
     width: 140px;
   }
 }
+@media only screen and (max-width: 459px) {
+  .acf-block-preview .team-section-heading .tag {
+    top: -30px;
+  }
+  .acf-block-preview .hero-tags .tag-sea-green {
+    top: auto;
+    right: -23px;
+    transform: rotate(-16.96deg);
+    bottom: -20px;
+  }
+}
+
 .daterangepicker .btn-sm {
   align-items: center;
   -webkit-appearance: none;

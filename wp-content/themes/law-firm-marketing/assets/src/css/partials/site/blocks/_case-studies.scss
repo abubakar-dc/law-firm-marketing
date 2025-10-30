@@ -24,6 +24,9 @@
 
 	&:nth-child(8n + 6) {
 		width: 90%;
+		.case-study-item-image {
+			aspect-ratio: 1475 / 790;
+		}
 	}
 
 	a.no-link-style,

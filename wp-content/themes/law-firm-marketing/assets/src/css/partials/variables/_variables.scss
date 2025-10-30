@@ -35,13 +35,12 @@
 	@include font_size(--lfm_font_size_32, 32, 24);
 	@include font_size(--lfm_font_size_40, 40, 26);
 	@include font_size(--lfm_font_size_48, 48, 30);
-	@include font_size(--lfm_font_size_52, 52, 40);
-	@include font_size(--lfm_font_size_60, 60, 45);
-	@include font_size(--lfm_font_size_68, 68, 55);
-	@include font_size(--lfm_font_size_96, 96, 58);
-	@include font_size(--lfm_font_size_105, 105, 62);
-	@include font_size(--lfm_font_size_128, 128, 72);
-	@include font_size(--lfm_my_size, 128, 72);
+	@include font_size(--lfm_font_size_52, 52, 30);
+	@include font_size(--lfm_font_size_60, 60, 30);
+	@include font_size(--lfm_font_size_68, 68, 32);
+	@include font_size(--lfm_font_size_96, 96, 38);
+	@include font_size(--lfm_font_size_105, 105, 42);
+	@include font_size(--lfm_font_size_128, 128, 48);
 
 	/* -------------------------------------------------
 	>> Color variables
@@ -81,6 +80,7 @@
 	--lfm_lpink: #ffcadc;
 	--lfm_lpink_2: #ffbff9;
 	--lfm_yellow: #fbe74e;
+	--lfm_yellow_1: #ffec43;
 	--lfm_purple: #8c52f1;
 	--lfm_orange: #de4d2f;
 	--lfm_mgreen: #a4ffa1;

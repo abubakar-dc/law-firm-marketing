@@ -1,46 +1,44 @@
-.talk-heading{
+.talk-heading {
 	position: relative;
 	align-items: center;
-}
-.tag {
-	position: absolute;
-	top:-4%;
-	left: -8%;
-	transform: rotate(-15deg);
+	.tag {
+		position: absolute;
+		top: -4%;
+		left: -8%;
+		transform: rotate(-15deg);
+	}
 }
 
 .wrapper-talk {
 	max-width: 825px;
 	margin: 0 auto;
-	.heading-2{
+	.heading-2 {
 		text-align: center;
 	}
 }
 .one {
-	color:#EBD4AB ;
+	color: #ebd4ab;
 	padding-right: 10px;
 }
-.talk{
+.talk {
 	display: flex;
 	align-items: start;
 
 	gap: 10px;
-
 }
 
 .talk-number {
 	margin-top: -6px;
 }
 .talk-block {
-
 	max-width: 600px;
 	margin: 0 auto;
 }
-.talk-paragraph{
+.talk-paragraph {
 	padding-left: 50px;
 }
-.talk-input{
-	border:none
+.talk-input {
+	border: none;
 }
 .input-container {
 	position: relative;
@@ -64,12 +62,11 @@
 	font-size: 12px;
 	color: white;
 	transform: translateY(-4px); /* small spacing above the border */
-
 }
-.required{
+.required {
 	color: var(--lfm-required-text);
 	font-size: var(--lfm_font_size_18);
 }
-.arrow-talk{
+.arrow-talk {
 	margin-left: 5px;
 }

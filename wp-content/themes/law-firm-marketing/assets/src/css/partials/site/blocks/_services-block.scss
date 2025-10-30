@@ -11,6 +11,8 @@
 
 	.service-item-image {
 		order: 2;
+		overflow: hidden;
+		border-radius: 10px;
 	}
 
 	.service-item-content {
@@ -27,7 +29,8 @@
 			background-color: var(--lfm_sea_green);
 		}
 	}
-	&:nth-child(even) {
+	&:nth-child(even),
+	&.image-at-left {
 		.service-item-image {
 			order: 1;
 		}
@@ -67,6 +70,12 @@
 	position: relative;
 	.heading-2 {
 		width: max-content;
+	}
+
+	&.center-align {
+		.heading-2 {
+			margin: auto;
+		}
 	}
 }
 

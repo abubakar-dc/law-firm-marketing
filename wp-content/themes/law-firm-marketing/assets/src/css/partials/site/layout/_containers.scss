@@ -69,6 +69,15 @@
 		background-color: var(--lfm_white);
 		color: var(--lfm_black);
 	}
+
+	a.button,
+	a.button:visited {
+		background-color: var(--lfm_white);
+		color: var(--lfm_black);
+		&::before {
+			border-color: var(--lfm_white);
+		}
+	}
 }
 
 .ctn-gray {

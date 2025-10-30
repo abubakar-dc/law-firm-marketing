@@ -14,41 +14,113 @@
 	a {
 		color: var(--lfm_footer_bgcolor);
 	}
-
 }
-.footer-parts{
-	display: flex;
-	width: 100%;
-	justify-content: space-between;
-	gap: 20px;
-}
-.footer-left-side{
-	width: 50%;
-}
-.footer-right-side{
-	width: 50%;
-	border-left: 1px solid rgb(255 255 255 / 0.2);
-	padding-left: 20px;
-}
-
-
-
-
 
 .footer-logo {
 	line-height: 0.65;
-	margin-bottom: 40px;
-	img{
-		width: 600px;
-	}
+	max-width: 470px;
 
 	a,
 	a:visited {
-		border: none;
-		display: inline-block;
+		display: block;
+	}
+
+	img {
+		width: 100%;
 	}
 }
 
+.widget-left {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 10px var(--lfm_space_48) 0 0;
+}
 
+.widget-right {
+	padding: 10px 0 0 var(--lfm_space_48);
+	border-left: 3px solid rgba(0, 0, 0, 0.1);
+}
 
+.footer-widgets {
+	.footer-widget {
+		width: 50%;
+	}
+}
 
+.footer-nav {
+	ul {
+		padding: 0;
+		margin: 0;
+		display: flex;
+		flex-wrap: wrap;
+
+		li {
+			padding: 0;
+			margin: 0 var(--lfm_space_48) 0 0;
+			list-style-type: none;
+			line-height: 1;
+
+			.submenu-icon {
+				display: none;
+			}
+
+			a,
+			a:visited {
+				font-size: var(--lfm_font_size_30);
+				line-height: 1;
+				position: relative;
+				display: inline-block;
+				color: var(--lfm_black);
+				@include font(gothic, black);
+			}
+
+			// &.current-menu-item > a,
+			// &.current-menu-parent > a,
+			// a:hover,
+			// a:focus-visible {
+			// }
+		}
+
+		ul {
+			padding: 20px 0 10px;
+
+			li {
+				display: block;
+				margin: 0 0 14px;
+				padding: 0 15px;
+
+				&:last-child {
+					margin: 0;
+				}
+			}
+		}
+	}
+}
+
+.social-links {
+	a.social-link,
+	a.social-link:visited {
+		margin-right: var(--lfm_space_48);
+		&::after {
+			content: "";
+			width: 14px;
+			height: 14px;
+			display: inline-block;
+			background-image: url("../images/external-arrow.svg");
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			position: relative;
+			right: 0;
+			margin-left: 8px;
+			transition: all 0.3s ease-in-out;
+			will-change: position;
+		}
+
+		&:hover {
+			&::after {
+				transform: translate(2px, -2px);
+			}
+		}
+	}
+}

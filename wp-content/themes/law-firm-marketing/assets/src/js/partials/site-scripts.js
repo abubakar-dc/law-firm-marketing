@@ -135,7 +135,7 @@ jQuery( function() {
 	 * Magnific Popup for Video Lightbox
 	 */
 
-	jQuery( '.hero-video-popup' ).magnificPopup( {
+	jQuery( '.hero-video-popup,.video-popup' ).magnificPopup( {
 		disableOn: 700,
 		type: 'iframe',
 		mainClass: 'mfp-fade',
@@ -234,5 +234,16 @@ jQuery( function() {
 			} )
 			.trigger( 'scroll' );
 	}
+
+	jQuery( document ).on( 'click', '.faq-head', function() {
+		jQuery( this ).hasClass( 'active' )
+			? ( jQuery( '.faq-head' ).removeClass( 'active' ),
+			jQuery( this ).removeClass( 'active' ),
+			jQuery( this ).parent().find( '.faq-content' ).slideUp( 400 ) )
+			: ( jQuery( '.faq-head' ).removeClass( 'active' ),
+			jQuery( this ).addClass( 'active' ),
+			jQuery( '.faq-content' ).slideUp(),
+			jQuery( this ).parent().find( '.faq-content' ).slideDown( 400 ) );
+	} );
 } );
 

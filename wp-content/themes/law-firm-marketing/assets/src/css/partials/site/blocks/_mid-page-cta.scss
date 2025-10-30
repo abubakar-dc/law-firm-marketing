@@ -1,0 +1,16 @@
+.mid-page-cta-content {
+	width: 71%;
+	.heading-2 {
+		position: relative;
+		.tag {
+			bottom: 34%;
+			left: 48%;
+			transform: rotate(-15deg);
+		}
+	}
+}
+
+.mid-page-cta-button {
+	width: 20%;
+	padding-bottom: var(--lfm_space_30);
+}

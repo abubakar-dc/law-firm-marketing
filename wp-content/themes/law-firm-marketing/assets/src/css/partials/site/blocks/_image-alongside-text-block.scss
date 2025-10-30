@@ -5,3 +5,23 @@
 		order: 2;
 	}
 }
+
+.image-alongside-text {
+	align-items: center;
+}
+
+.iat-content {
+	padding-right: var(--lfm_space_96);
+}
+
+.iat-image {
+	aspect-ratio: 720 / 406;
+	border-radius: 10px;
+	overflow: hidden;
+	position: relative;
+
+	.video-btn {
+		width: 80px;
+		height: 80px;
+	}
+}

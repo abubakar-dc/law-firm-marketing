@@ -45,6 +45,113 @@
 }
 
 @media only screen and (max-width: 1003px) {
+	.hero-image.image-cover {
+		aspect-ratio: 2 / 1.5;
+	}
+
+	.video-btn {
+		width: 84px;
+		height: 84px;
+	}
+
+	.faq-icon {
+		width: 20px;
+		height: 20px;
+		right: 24px;
+
+		&::before {
+			height: 3px;
+		}
+
+		&::after {
+			width: 3px;
+		}
+	}
+
+	.faq-heading {
+		max-width: calc(100% - 32px);
+	}
+
+	.social-links {
+		display: flex;
+		gap: 10px;
+		flex-direction: column;
+	}
+
+	.widget-head {
+		flex-wrap: wrap;
+		> div {
+			width: 100%;
+		}
+	}
+	.footer-nav ul {
+		row-gap: 10px;
+		li {
+			margin: 0 var(--lfm_space_30) 0 0;
+
+			a,
+			a:visited {
+				font-size: 18px;
+			}
+		}
+	}
+
+	.footer-widget.widget-left {
+		flex-direction: column-reverse;
+		margin-bottom: 48px;
+		.footer-logo {
+			margin-bottom: 48px;
+		}
+	}
+
+	.footer-widgets .footer-widget {
+		width: 100%;
+		padding: 0;
+		border: 0;
+		.right-align {
+			text-align: left;
+			br {
+				display: none;
+			}
+		}
+	}
+
+	.image-alongside-text.two-columns {
+		gap: 48px;
+	}
+
+	.iat-content {
+		padding-right: 0;
+	}
+
+	.case-study-item-content {
+		margin-top: 30px;
+	}
+	.mid-page-cta-ctn .right-align {
+		text-align: left;
+		margin-top: 30px;
+	}
+
+	.case-study-item-image,
+	.case-study-item-content,
+	.mid-page-cta-content,
+	.mid-page-cta-button {
+		width: 100%;
+	}
+
+	.lead-heading-area {
+		width: 100%;
+		margin-bottom: 36px;
+
+		br {
+			display: none;
+		}
+	}
+
+	.lead-content p {
+		margin-bottom: 24px;
+		color: #635f5f;
+	}
 	.case-study-item,
 	.case-study-item:nth-child(8n + 6),
 	.case-study-item:nth-child(8n + 3) {

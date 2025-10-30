@@ -114,7 +114,7 @@ header {
 
 .header-section {
 	background-color: var(--lfm_header_bgcolor);
-	z-index: 9;
+	z-index: 99;
 	width: 100%;
 	transition: all 0.3s ease-in-out;
 	position: sticky;
@@ -148,4 +148,15 @@ header {
 
 .desktop-hide {
 	display: none;
+}
+
+.logged-in {
+	.mfp-iframe-holder button.mfp-close {
+		position: fixed;
+		top: 54px;
+	}
+
+	.header-section {
+		top: 32px;
+	}
 }

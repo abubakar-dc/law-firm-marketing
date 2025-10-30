@@ -2,11 +2,11 @@
 
 @media (max-width: 1003px) {
 	.header-inner {
-		padding: 19px 0;
+		padding: 20px 0;
 	}
 
 	.logo {
-		max-width: 190px;
+		max-width: 120px;
 	}
 
 	.nav-overlay .header-nav {
@@ -290,6 +290,16 @@
 @media (max-width: 782px) {
 	.no-overflow .logged-in.admin-bar .left-header {
 		top: 110px;
+	}
+
+	.logged-in {
+		.mfp-iframe-holder button.mfp-close {
+			top: 64px;
+		}
+
+		.header-section {
+			top: 46px;
+		}
 	}
 
 	#wpadminbar {

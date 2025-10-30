@@ -115,31 +115,6 @@ $lmf_var_tbar_btn      = $lmf_option_fields['lmf_var_tbar_btn'] ?? null;
 	<a class="skip-link screen-reader-text"
 		href="#page-section"><?php esc_html_e( 'Skip to content', 'lawfirmmarketing_td' ); ?></a>
 	<header id="header-section" class="header-section">
-		<!-- Header Start -->
-		<?php if ( $lmf_var_tbar_vsblty ) { ?>
-			<div class="top-bar" id="top-bar-ajax" style="display:none;">
-				<div class="header-wrapper">
-					<div class="top-bar-text">
-						<?php
-						if ( $lmf_var_tbar_text ) {
-							echo html_entity_decode( $lmf_var_tbar_text );
-						}
-						?>
-						<?php
-						if ( $lmf_var_tbar_btn ) {
-							echo LawFirmMarketing::button( $lmf_var_tbar_btn, '' );
-						}
-						?>
-					</div>
-				</div>
-				<div class="top-bar-cross">
-					<span>
-						<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/build/images/topbar-cross-icon.svg"
-							width="16" height="16" alt="<?php esc_attr_e( 'Top bar', 'lawfirmmarketing_td' ); ?>">
-					</span>
-				</div>
-			</div>
-		<?php } ?>
 		<div class="header-wrapper header-inner d-flex align-items-center justify-content-between">
 			<div class="header-logo logo">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img
@@ -151,29 +126,24 @@ $lmf_var_tbar_btn      = $lmf_option_fields['lmf_var_tbar_btn'] ?? null;
 					<div class="nav-container">
 						<div class="header-nav">
 							<?php
-							wp_nav_menu(
-								array(
-									'theme_location' => 'header-nav',
-									'fallback_cb'    => 'LawFirmMarketing::nav_fallback',
-									'walker'         => new LawFirmMarketing\Walker\WP_Theme_Walker_Nav(),
-									'container'      => 'nav',
-								)
-							);
+								wp_nav_menu(
+									array(
+										'theme_location' => 'header-nav',
+										'fallback_cb'    => 'LawFirmMarketing::nav_fallback',
+										'walker'         => new LawFirmMarketing\Walker\WP_Theme_Walker_Nav(),
+										'container'      => 'nav',
+									)
+								);
 							?>
 						</div>
-						<?php if ( $lmf_var_tohdr_btn || $lmf_var_tohdr_btn_two ) { ?>
-						<div class="header-btns desktop-hide">
-							<?php
-							if ( $lmf_var_tohdr_btn ) {
-								echo LawFirmMarketing::button( $lmf_var_tohdr_btn, 'button' );
-							}
-
-							if ( $lmf_var_tohdr_btn_two ) {
-								echo LawFirmMarketing::button( $lmf_var_tohdr_btn_two, 'button' );
-							}
-							?>
-
-						</div>
+						<?php if ( $lmf_var_tohdr_btn ) { ?>
+							<div class="header-btns">
+								<?php
+									if ( $lmf_var_tohdr_btn ) {
+										echo LawFirmMarketing::button( $lmf_var_tohdr_btn, 'button' );
+									}
+								?>
+							</div>
 						<?php } ?>
 					</div>
 				</div>
@@ -183,19 +153,6 @@ $lmf_var_tbar_btn      = $lmf_option_fields['lmf_var_tbar_btn'] ?? null;
 					<span class="bottom"></span>
 				</div>
 			</div>
-			<?php if ( $lmf_var_tohdr_btn || $lmf_var_tohdr_btn_two ) { ?>
-			<div class="header-btns">
-				<?php
-				if ( $lmf_var_tohdr_btn ) {
-					echo LawFirmMarketing::button( $lmf_var_tohdr_btn, 'button' );
-				}
-
-				if ( $lmf_var_tohdr_btn_two ) {
-					echo LawFirmMarketing::button( $lmf_var_tohdr_btn_two, 'button' );
-				}
-				?>
-			</div>
-			<?php } ?>
 			<!-- header buttons -->
 		</div>
 		<!-- Header End -->

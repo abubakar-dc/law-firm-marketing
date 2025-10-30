@@ -15,19 +15,663 @@
 get_header();
 
 ?>
-<section id="page-section" class="page-section">
-	<!-- Content Start -->
-	<?php
-	if ( have_posts() ) {
-		while ( have_posts() ) {
-			the_post();
-			// Include specific template for the content.
-			get_template_part( 'partials/content', 'page' );
+	<section id="page-section" class="page-section">
+		<div class="s-96"></div>
+		<section class="ctn-1680">
+			<div class="wrapper">
+				<div class="hero-default hero-home">
+					<div class="hero-default-inner">
 
-		}
-	}
-	?>
-	<div class="ts-80"></div>
-	<!-- Content End -->
-</section>
+						<div class="hero-default-image">
+							<div class="hero-image image-cover">
+								<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/src/images/uploads/hero-image.webp" alt="Image">
+								<div class="video-btn">
+									<img class="video-inner-play" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/src/images/play-button-icon.svg"
+										alt="Image">
+									<img class="video-outer" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/src/images/play-button.svg" alt="Image">
+								</div>
+							</div>
+							<a href="https://youtu.be/EngW7tLk6R8" class="hero-video-popup" aria-label="Play Video"
+								title="Play Video">
+								<div class="sr-only">Play Video</div>
+							</a>
+						</div>
+						<div class="s-96"></div>
+						<div class="hero-default-content">
+							<h1 class="heading-1 mb-0">Modern Marketing <br> for Law Firms</h1>
+							<div class="hero-tags tags">
+								<div class="tag tag-sea-green">Results</div>
+								<div class="tag tag-yellow">Strategies</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="s-156"></div>
+		<section class=" ctn-black">
+			<div class="s-128"></div>
+			<div class="wrapper">
+				<div class="lead-paragraph-ctn">
+					<div class="lead-heading-area">
+						<h2 class="heading-3 mb-0">Boost Your <br> Organic Traffic <br> With Strategies</h2>
+
+					</div>
+					<div class="lead-content text-22">
+						<p>
+							Choosing a company to handle your law firm marketing is never an easy decision. There
+							are hundreds of companies that
+							handle digital marketing services for attorneys. Unfortunately, the sad reality is that
+							most providers are not very
+							good. You probably already know this. You’ve experienced this and you want to find
+							someone who will actually keep the
+							promises.
+						</p>
+						<p>
+							Every year, competition in the lawyer marketing world gets more and more competitive. As
+							Internet usage continues to
+							grow, so too are the number of law firms competing for that business. 
+						</p>
+						<p>
+							There are also nearly 287 million Internet users in America and almost 90% of the
+							population uses the Internet.
+							According to the American Bar Association, there are over 1.3 million lawyers in
+							America.
+						</p>
+						<div class="s-20"></div>
+						<div class="lead-content-button">
+							<a href="#" class="button large-btn" title="Let’s Talk">Let’s Talk</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="s-128"></div>
+		</section>
+		<div class="s-156"></div>
+		<section class="ctn-black" style="display: none;">
+			<div class="s-96"></div>
+			<div class="wrapper">
+				<div class="team-members-ctn">
+					<div class="section-head center-align">
+						<h2 class="heading-2 mb-0 team-section-heading">The Makers of Magic
+							<div class="tag">the crew</div>
+						</h2>
+					</div>
+					<div class="s-96"></div>
+					<div class="team-members">
+						<div class="team-member">
+							<div class="team-member-image image-cover">
+								<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/src/images/uploads/team-member-01.webp" alt="Team Member">
+							</div>
+							<div class="team-member-info">
+								<div class="team-member-info-inner">
+									<div class="designation">Founder & CEO</div>
+									<div class="s-20"></div>
+									<h3 class="heading-3 mb-0">Andreson james</h3>
+									<div class="s-24"></div>
+									<p>Andreson James believes in building strong partnerships, empowering teams,
+										and turning ideas into campaigns that make
+										real impact.</p>
+								</div>
+							</div>
+						</div>
+						<div class="team-member">
+							<div class="team-member-image image-cover">
+								<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/src/images/uploads/team-member-02.webp" alt="Team Member">
+							</div>
+							<div class="team-member-info">
+								<div class="team-member-info-inner">
+									<div class="designation">Marketing Maestro</div>
+									<div class="s-20"></div>
+									<h3 class="heading-3 mb-0">
+										James Andrew
+									</h3>
+									<div class="s-24"></div>
+									<p>Whether it’s shaping a brand’s voice or crafting campaigns that captivate
+										audiences, Maria Andrew leads with passion,
+										precision, & a touch of creative flair that sets Lawyrs apart.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="s-96"></div>
+
+		</section>
+		<section class="ctn-1680">
+			<div class="wrapper">
+				<div class="services-ctn">
+					<div class="section-head text-22 services-heading">
+						<h2 class="heading-2">what we love doing <div class="tag">Our services</div>
+						</h2>
+						<p>
+							Our rich design and technology expertise delivers top brands and <br> digital
+							experiences.
+						</p>
+					</div>
+					<div class="s-96"></div>
+					<div class="services-items">
+						<div class="service-item">
+							<div class="service-item-content">
+								<div class="designation">Search engine optimization</div>
+								<h3 class="heading-3 mb-0">Attract Up to 400% More Qualified Leads</h3>
+								<p>Attract high-quality leads to your law firm every week with SEO services tailored
+									to achieve your goals and attract more
+									of your ideal clients. We analyze the market to bring in a solid and consistent
+									case flow for your firm. </p>
+								<p>We’ll improve your local SEO and optimize your Google Business Profile (GBP) to
+									get your practice to the top of searches
+									in your area.</p>
+								<ol>
+									<li>Comprehensive Website Audit</li>
+									<li>Keyword Research & Strategy</li>
+									<li>Competitor Analysis</li>
+									<li>Monthly Reporting & Analytics</li>
+								</ol>
+								<a href="#" class="button arrow-btn" title="Let’s get connected">Let’s get connected
+								</a>
+							</div>
+							<div class="service-item-image image-cover">
+								<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/src/images/uploads/image-01.webp" alt="Image">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="s-128"></div>
+		<section class="ctn-black">
+			<div class="s-128"></div>
+			<div class="wrapper">
+				<div class="stats-ctn">
+					<div class="section-head">
+						<h2 class="heading-2 mb-0 stats-heading">Stand out <br /> from the rest
+							<div class="tag">Statistics</div>
+						</h2>
+						<div class="text-22">
+							<p>
+								Every year, competition in the lawyer marketing world gets more and more
+								competitive.<br> As
+								Internet usage continues to
+								grow,
+							</p>
+						</div>
+					</div>
+					<div class="s-96"></div>
+					<div class="stats-columns three-columns">
+						<div class="stat-column">
+							<div class="stat-number heading-2">
+								2.1M
+							</div>
+							<div class="stat-desc">
+								Total attorneys in the U.S.
+							</div>
+						</div>
+						<div class="stat-column">
+							<div class="stat-number heading-2">
+								204M
+							</div>
+							<div class="stat-desc">
+								Number of Internet users in America
+							</div>
+						</div>
+						<div class="stat-column">
+							<div class="stat-number heading-2">
+								9.2%
+							</div>
+							<div class="stat-desc">
+								Estimated percent of Internet users
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="s-128"></div>
+		</section>
+		<div class="s-156"></div>
+		<section class="ctn-1680">
+			<div class="wrapper">
+				<div class="services-ctn">
+					<div class="services-items">
+						<div class="service-item image-at-left">
+							<div class="service-item-content">
+								<div class="designation">Search engine optimization</div>
+								<h3 class="heading-3 mb-0">Book More Consults with a Stunning Website</h3>
+								<p>Get more legal clients with a sleek and sophisticated website that converts
+									visitors into lead. Our team of law firm
+									website design experts combines modern aesthetics with simple, user-friendly
+									designs to help your site get more clients.</p>
+								<p>Intuitive navigation and calls to action boost engagement and maximize your ROI.
+								</p>
+								<br>
+								<ol>
+									<li>Comprehensive Website Audit</li>
+									<li>Keyword Research & Strategy</li>
+									<li>Competitor Analysis</li>
+									<li>Monthly Reporting & Analytics</li>
+								</ol>
+								<a href="#" class="button arrow-btn" title="Let’s get connected">Let’s get connected
+								</a>
+							</div>
+							<div class="service-item-image image-cover">
+								<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/src/images/uploads/image-02.webp" alt="Image">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="s-156"></div>
+		<section class="ctn-black">
+			<div class="s-128"></div>
+			<div class="wrapper">
+				<div class="mid-page-cta-ctn d-flex align-items-end justify-content-between">
+					<div class="mid-page-cta-content">
+						<h2 class="heading-2 mb-0">Marketing That <br> Wins Cases & Clients
+							<div class="tag">Strategies</div>
+						</h2>
+					</div>
+					<div class="mid-page-cta-button right-align">
+						<a href="#" class="button large-btn">Let's Talk</a>
+					</div>
+				</div>
+			</div>
+			<div class="s-128"></div>
+		</section>
+		<div class="s-156"></div>
+		<section class="ctn-1680">
+			<div class="wrapper">
+				<div class="services-ctn">
+					<div class="services-items">
+						<div class="service-item">
+							<div class="service-item-content">
+								<div class="designation">Performance marketing</div>
+								<h3 class="heading-3 mb-0">Grow Your Case Flow with Digital Advertising</h3>
+								<p>Generate a steady flow of leads and lower your client acquisition costs with
+									high-ROI pay-per-click (PPC) campaigns. Our
+									experts fine-tune your campaigns for maximum profitability while you control
+									your ad spend. </p>
+								<p>With our detailed reporting, you'll always know exactly how much you’ve spent and
+									how many qualified leads you generated
+									with your campaigns.
+								</p>
+								<br>
+								<a href="#" class="button arrow-btn" title="Let’s get connected">Let’s get connected
+								</a>
+							</div>
+							<div class="service-item-image image-cover">
+								<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/src/images/uploads/image-03.webp" alt="Image">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="s-156"></div>
+		<section class="ctn-full-width">
+			<div class="wrapper">
+				<div class="text-sliders">
+					<div class="text-slider text-slider-reg ctn-black">
+						<div class="text-slide">
+							Proven results
+						</div>
+						<div class="text-slide">
+							high value clients
+						</div>
+						<div class="text-slide">
+							online reputation
+						</div>
+						<div class="text-slide">
+							increase visibility
+						</div>
+						<div class="text-slide">
+							Proven results
+						</div>
+						<div class="text-slide">
+							high value clients
+						</div>
+						<div class="text-slide">
+							online reputation
+						</div>
+						<div class="text-slide">
+							increase visibility
+						</div>
+					</div>
+					<div class="inner-slider">
+						<div class="text-slider text-slider-rev ctn-gray">
+							<div class="text-slide">
+								Free Consultation
+							</div>
+							<div class="text-slide">
+								Free Consultation
+							</div>
+							<div class="text-slide">
+								Free Consultation
+							</div>
+							<div class="text-slide">
+								Free Consultation
+							</div>
+							<div class="text-slide">
+								Free Consultation
+							</div>
+							<div class="text-slide">
+								Free Consultation
+							</div>
+							<div class="text-slide">
+								Free Consultation
+							</div>
+							<div class="text-slide">
+								Free Consultation
+							</div>
+							<div class="text-slide">
+								Free Consultation
+							</div>
+							<div class="text-slide">
+								Free Consultation
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="s-156"></div>
+		<section class="ctn-1680">
+			<div class="wrapper">
+				<div class="section-head d-flex  align-items-end justify-content-between">
+					<div class="section-head-heading">
+						<h2 class="heading-2 mb-0">Legal Wins <br> in Action
+							<div class="tag">Case Studies</div>
+						</h2>
+					</div>
+					<div class="section-head-paragraph text-22">
+						<p>
+							Discover how our strategic legal approach and client-focused representation have
+							delivered real results. Each success
+							story highlights our commitment to justice, meticulous preparation.
+						</p>
+					</div>
+				</div>
+				<div class="s-96"></div>
+				<div class="case-studies">
+					<div class="case-study-item">
+						<div class="case-study-item-image image-cover">
+							<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/src/images/uploads/case-study-image-01.webp" alt="Image">
+							<a href="#" class="no-link-style">
+								<div class="sr-only">View Case Study</div>
+							</a>
+						</div>
+						<div class="case-study-item-content">
+							<h3 class="heading-3"><a href="#" class="no-link-style">Preston Law Firm </a></h3>
+							<div class="text-18">
+								<p>Get more legal clients with a sleek and sophisticated website that converts
+									visitors into lead. Our team of law firm
+									website design experts combines modern aesthetics with simple, user-friendly
+									designs to help your site get more clients.</p>
+								<p>
+									Intuitive navigation and calls to action boost engagement and maximize your ROI.
+								</p>
+								<br>
+								<ol>
+									<li>Comprehensive Website Audit</li>
+									<li>Keyword Research & Strategy</li>
+									<li>Competitor Analysis</li>
+									<li>Monthly Reporting & Analytics</li>
+								</ol>
+								<div class="s-24"></div>
+								<a href="#" class="button arrow-btn">Let's Get Connected</a>
+							</div>
+						</div>
+					</div>
+					<div class="case-study-item">
+						<div class="case-study-item-image image-cover">
+							<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/src/images/uploads/case-study-image-02.webp" alt="Image">
+							<a href="#" class="no-link-style">
+								<div class="sr-only">View Case Study</div>
+							</a>
+						</div>
+						<div class="case-study-item-content">
+							<h3 class="heading-3"><a href="#" class="no-link-style">Preston Law Firm </a></h3>
+							<div class="text-18">
+								<p>Get more legal clients with a sleek and sophisticated website that converts
+									visitors into lead. Our team of law firm
+									website design experts combines modern aesthetics with simple, user-friendly
+									designs to help your site get more clients.</p>
+								<p>
+									Intuitive navigation and calls to action boost engagement and maximize your ROI.
+								</p>
+								<br>
+								<ol>
+									<li>Comprehensive Website Audit</li>
+									<li>Keyword Research & Strategy</li>
+									<li>Competitor Analysis</li>
+									<li>Monthly Reporting & Analytics</li>
+								</ol>
+								<div class="s-24"></div>
+								<a href="#" class="button arrow-btn">Let's Get Connected</a>
+							</div>
+						</div>
+					</div>
+					<div class="case-study-item">
+						<div class="case-study-item-image image-cover">
+							<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/src/images/uploads/case-study-image-03.webp" alt="Image">
+							<a href="#" class="no-link-style">
+								<div class="sr-only">View Case Study</div>
+							</a>
+						</div>
+						<div class="case-study-item-content">
+							<h3 class="heading-3"><a href="#" class="no-link-style">Preston Law Firm </a></h3>
+							<div class="text-18">
+								<p>Get more legal clients with a sleek and sophisticated website that converts
+									visitors into lead. Our team of law firm
+									website design experts combines modern aesthetics with simple, user-friendly
+									designs to help your site get more clients.</p>
+								<p>
+									Intuitive navigation and calls to action boost engagement and maximize your ROI.
+								</p>
+								<br>
+								<ol>
+									<li>Comprehensive Website Audit</li>
+									<li>Keyword Research & Strategy</li>
+									<li>Competitor Analysis</li>
+									<li>Monthly Reporting & Analytics</li>
+								</ol>
+								<div class="s-24"></div>
+								<a href="#" class="button arrow-btn">Let's Get Connected</a>
+							</div>
+						</div>
+					</div>
+					<div class="case-study-item">
+						<div class="case-study-item-image image-cover">
+							<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/src/images/uploads/case-study-image-04.webp" alt="Image">
+							<a href="#" class="no-link-style">
+								<div class="sr-only">View Case Study</div>
+							</a>
+						</div>
+						<div class="case-study-item-content">
+							<h3 class="heading-3"><a href="#" class="no-link-style">Preston Law Firm </a></h3>
+							<div class="text-18">
+								<p>Get more legal clients with a sleek and sophisticated website that converts
+									visitors into lead. Our team of law firm
+									website design experts combines modern aesthetics with simple, user-friendly
+									designs to help your site get more clients.</p>
+								<p>
+									Intuitive navigation and calls to action boost engagement and maximize your ROI.
+								</p>
+								<br>
+								<ol>
+									<li>Comprehensive Website Audit</li>
+									<li>Keyword Research & Strategy</li>
+									<li>Competitor Analysis</li>
+									<li>Monthly Reporting & Analytics</li>
+								</ol>
+								<div class="s-24"></div>
+								<a href="#" class="button arrow-btn">Let's Get Connected</a>
+							</div>
+						</div>
+					</div>
+					<div class="case-study-item">
+						<div class="case-study-item-image image-cover">
+							<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/src/images/uploads/case-study-image-05.webp" alt="Image">
+							<a href="#" class="no-link-style">
+								<div class="sr-only">View Case Study</div>
+							</a>
+						</div>
+						<div class="case-study-item-content">
+							<h3 class="heading-3"><a href="#" class="no-link-style">Preston Law Firm </a></h3>
+							<div class="text-18">
+								<p>Get more legal clients with a sleek and sophisticated website that converts
+									visitors into lead. Our team of law firm
+									website design experts combines modern aesthetics with simple, user-friendly
+									designs to help your site get more clients.</p>
+								<p>
+									Intuitive navigation and calls to action boost engagement and maximize your ROI.
+								</p>
+								<br>
+								<ol>
+									<li>Comprehensive Website Audit</li>
+									<li>Keyword Research & Strategy</li>
+									<li>Competitor Analysis</li>
+									<li>Monthly Reporting & Analytics</li>
+								</ol>
+								<div class="s-24"></div>
+								<a href="#" class="button arrow-btn">Let's Get Connected</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="s-200"></div>
+		<section>
+			<div class="wrapper">
+				<div class="image-alongside-text two-columns">
+					<div class="iat-column iat-content">
+						<h3 class="heading-3">Companies Through Design Innovations</h3>
+						<div class="text-18">
+							<p>Generate a steady flow of leads and lower your client acquisition costs with
+								high-ROI
+								pay-per-click (PPC) campaigns.</p>
+						</div>
+
+						<div class="s-48"></div>
+						<a href="#" class="button large-btn" title="Let’s Talk">Let’s Talk</a>
+					</div>
+					<div class="iat-column iat-image image-cover">
+						<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/src/images/uploads/iat-image.webp" alt="Image">
+						<div class="video-btn">
+							<img class="video-inner-play" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/src/images/black-play-btn.svg" alt="Image">
+
+						</div>
+						<a href="https://youtu.be/EngW7tLk6R8" class="video-popup" aria-label="Play Video"
+							title="Play Video">
+							<div class="sr-only">Play Video</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="s-156"></div>
+		<section class="ctn-1260">
+			<div class="wrapper">
+				<div class="faq-ctn">
+					<div class="section-head center-align">
+						<h2 class="heading-2 mb-0">Frequently<br> Asked Questions <div class="tag">
+								faqs
+							</div>
+						</h2>
+					</div>
+					<div class="s-96"></div>
+					<div class="faqs-area">
+						<div class="faq-item">
+							<div class="faq-head">
+								<p class="faq-heading">What does a law firm marketing agency do?</p>
+								<div class="faq-icon"></div>
+							</div>
+							<div class="faq-content text-18">
+								<p>Marketing results depend on your goals and the strategies used. SEO typically
+									takes 3–6 months to show measurable
+									growth, while PPC and social campaigns can start generating leads within a few
+									weeks.</p>
+							</div>
+						</div>
+						<div class="faq-item">
+							<div class="faq-head">
+								<p class="faq-heading">Why do law firms need specialized marketing?</p>
+								<div class="faq-icon"></div>
+							</div>
+							<div class="faq-content text-18">
+								<p>Marketing results depend on your goals and the strategies used. SEO typically
+									takes 3–6 months to show measurable
+									growth, while PPC and social campaigns can start generating leads within a few
+									weeks.</p>
+							</div>
+						</div>
+						<div class="faq-item">
+							<div class="faq-head">
+								<p class="faq-heading">How long does it take to see results?</p>
+								<div class="faq-icon"></div>
+							</div>
+							<div class="faq-content text-18">
+								<p>Marketing results depend on your goals and the strategies used. SEO typically
+									takes 3–6 months to show measurable
+									growth, while PPC and social campaigns can start generating leads within a few
+									weeks.</p>
+							</div>
+						</div>
+						<div class="faq-item">
+							<div class="faq-head">
+								<p class="faq-heading">Do you work with solo attorneys or large firms?</p>
+								<div class="faq-icon"></div>
+							</div>
+							<div class="faq-content text-18">
+								<p>Marketing results depend on your goals and the strategies used. SEO typically
+									takes 3–6 months to show measurable
+									growth, while PPC and social campaigns can start generating leads within a few
+									weeks.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="s-156"></div>
+		<section class="ctn-black">
+			<div class="s-128"></div>
+			<div class="talk-block">
+				<div class="talk-head">
+					<h2 class="heading-2 mb-0 talk-heading">Let's Talk! <div class="tag">Contact Us!</div>
+					</h2>
+				</div>
+			</div>
+			<div class="s-128"></div>
+			<div class="ctn-990">
+				<div class="wrapper">
+					<div class="talk">
+						<div class="talk-number">
+							<span class="one">01</span><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/src/images/Vector.svg" alt="Image">
+						</div>
+						<h3 class="heading-5 heading-talk">Let’s get to know each other!</h3>
+					</div>
+					<p class="talk-paragraph">
+						What is your first name?
+					</p>
+					<div class="s-72"></div>
+					<div class="input-container">
+						<input type="text" class="talk-input" placeholder=" ">
+						<span class="hint">Press Enter
+							<img class="arrow-talk" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/src/images/enter-arrow.svg" alt="Image">
+						</span>
+
+					</div>
+					<div class="required">
+						*This question is required*
+					</div>
+				</div>
+
+			</div>
+
+			<div class="s-128"></div>
+		</section>
+	</section>
 <?php get_footer(); ?>

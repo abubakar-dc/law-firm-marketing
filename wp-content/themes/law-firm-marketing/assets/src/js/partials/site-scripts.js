@@ -5,6 +5,8 @@
 import magnificPopup from '../vendors/jquery-magnificpopup';
 import organicTabs from '../vendors/organic-tab';
 import slick from '../vendors/slick.min';
+import ScrollReveal from '../vendors/scrollreveal';
+
 jQuery( document ).on( 'scroll', function() {
 	if ( jQuery( document ).scrollTop() > 0 ) {
 		jQuery( 'header, body' ).addClass( 'shrink' );
@@ -131,43 +133,44 @@ jQuery( function() {
 		}
 	}
 
-	/**
-	 * Magnific Popup for Video Lightbox
-	 */
+	if ( jQuery( '.hero-video-popup,.video-popup' ).length > 0 ) {
+		jQuery( '.hero-video-popup,.video-popup' ).magnificPopup( {
+			disableOn: 700,
+			type: 'iframe',
+			mainClass: 'mfp-fade',
+			removalDelay: 160,
+			preloader: false,
+			fixedContentPos: false,
+		} );
+	}
 
-	jQuery( '.hero-video-popup,.video-popup' ).magnificPopup( {
-		disableOn: 700,
-		type: 'iframe',
-		mainClass: 'mfp-fade',
-		removalDelay: 160,
-		preloader: false,
-		fixedContentPos: false,
-	} );
+	if ( jQuery( '.text-slider-reg' ).length > 0 ) {
+		jQuery( '.text-slider-reg' ).slick( {
+			variableWidth: true,
+			infinite: true,
+			autoplay: true,
+			autoplaySpeed: 0,
+			speed: 8000,
+			cssEase: 'linear',
+			arrows: false,
+			pauseOnHover: false,
+			swipe: false,
+		} );
+	}
 
-	jQuery( '.text-slider-reg' ).slick( {
-		variableWidth: true,
-		infinite: true,
-		autoplay: true,
-		autoplaySpeed: 0,
-		speed: 8000,
-		cssEase: 'linear',
-		arrows: false,
-		pauseOnHover: false,
-		swipe: false,
-		pauseOnHover: false,
-	} );
-
-	jQuery( '.text-slider-rev' ).slick( {
-		variableWidth: true,
-		infinite: true,
-		autoplay: true,
-		autoplaySpeed: 0,
-		speed: 8000,
-		cssEase: 'linear',
-		arrows: false,
-		pauseOnHover: false,
-		swipe: false,
-	} );
+	if ( jQuery( '.text-slider-rev' ).length > 0 ) {
+		jQuery( '.text-slider-rev' ).slick( {
+			variableWidth: true,
+			infinite: true,
+			autoplay: true,
+			autoplaySpeed: 0,
+			speed: 8000,
+			cssEase: 'linear',
+			arrows: false,
+			pauseOnHover: false,
+			swipe: false,
+		} );
+	}
 
 	if ( jQuery( '.stat-number' ).length > 0 ) {
 		const $statNumbers = jQuery( '.stat-number' );
@@ -175,11 +178,7 @@ jQuery( function() {
 		function animateCounter( $element ) {
 			const text = $element.text().trim();
 			const numericText = text.match( /[0-9]+(?:\.[0-9]+)?/ )[ 0 ];
-			const prefix = text.startsWith( '#' )
-				? '#'
-				: text.replace( numericText, '' ).trim().startsWith( '#' )
-					? '#'
-					: '';
+			const prefix = text.startsWith( '#' ) ? '#' : text.replace( numericText, '' ).trim().startsWith( '#' ) ? '#' : '';
 			const suffix = text.replace( prefix + numericText, '' ).trim();
 			const targetValue = parseFloat( numericText );
 			if ( isNaN( targetValue ) ) {
@@ -191,21 +190,14 @@ jQuery( function() {
 			const totalFrames = duration / ( 1000 / 60 );
 			const increment = ( targetValue - startValue ) / totalFrames;
 			let animatedValue = startValue;
-
-			const decimalPlaces = numericText.includes( '.' )
-				? numericText.split( '.' )[ 1 ].length
-				: 0;
+			const decimalPlaces = numericText.includes( '.' ) ? numericText.split( '.' )[ 1 ].length : 0;
 
 			const updateCounter = () => {
 				animatedValue += increment;
 				if ( animatedValue >= targetValue ) {
-					$element.text(
-						prefix + targetValue.toFixed( decimalPlaces ) + suffix,
-					);
+					$element.text( prefix + targetValue.toFixed( decimalPlaces ) + suffix );
 				} else {
-					$element.text(
-						prefix + animatedValue.toFixed( decimalPlaces ) + suffix,
-					);
+					$element.text( prefix + animatedValue.toFixed( decimalPlaces ) + suffix );
 					requestAnimationFrame( updateCounter );
 				}
 			};
@@ -214,12 +206,7 @@ jQuery( function() {
 
 		const isInViewport = ( element ) => {
 			const rect = element[ 0 ].getBoundingClientRect();
-			return (
-				rect.bottom >= 0 &&
-				rect.top <=
-					( window.innerHeight ||
-						document.documentElement.clientHeight )
-			);
+			return rect.bottom >= 0 && rect.top <= ( window.innerHeight || document.documentElement.clientHeight );
 		};
 
 		jQuery( window )
@@ -235,15 +222,73 @@ jQuery( function() {
 			.trigger( 'scroll' );
 	}
 
-	jQuery( document ).on( 'click', '.faq-head', function() {
-		jQuery( this ).hasClass( 'active' )
-			? ( jQuery( '.faq-head' ).removeClass( 'active' ),
-			jQuery( this ).removeClass( 'active' ),
-			jQuery( this ).parent().find( '.faq-content' ).slideUp( 400 ) )
-			: ( jQuery( '.faq-head' ).removeClass( 'active' ),
-			jQuery( this ).addClass( 'active' ),
-			jQuery( '.faq-content' ).slideUp(),
-			jQuery( this ).parent().find( '.faq-content' ).slideDown( 400 ) );
+	if ( jQuery( '.faq-head' ).length > 0 ) {
+		jQuery( document ).on( 'click', '.faq-head', function() {
+			jQuery( this ).hasClass( 'active' )
+				? ( jQuery( '.faq-head' ).removeClass( 'active' ),
+				jQuery( this ).removeClass( 'active' ),
+				jQuery( this ).parent().find( '.faq-content' ).slideUp( 400 ) )
+				: ( jQuery( '.faq-head' ).removeClass( 'active' ),
+				jQuery( this ).addClass( 'active' ),
+				jQuery( '.faq-content' ).slideUp(),
+				jQuery( this ).parent().find( '.faq-content' ).slideDown( 400 ) );
+		} );
+	}
+
+	ScrollReveal().reveal( '.header-logo, .header-nav li, .header-btns', {
+		duration: 600,
+		distance: '10px',
+		opacity: 0,
+		easing: 'ease-in-out',
+		interval: 50,
+		reset: false,
+	} );
+
+	ScrollReveal().reveal( '.hero-default-image,.hero-default-content', {
+		delay: 600,
+		duration: 400,
+		distance: '20px',
+		opacity: 0,
+		easing: 'ease-in-out',
+		reset: false,
+		scale: 0.98,
+	} );
+
+	ScrollReveal().reveal( '.tags .tag', {
+		delay: 1200,
+		duration: 600,
+		distance: '0',
+		opacity: 0,
+		easing: 'ease-in-out',
+		interval: 20,
+		reset: false,
+	} );
+
+	ScrollReveal().reveal( '.lead-heading-area, .lead-content,.service-item,.section-head,.mid-page-cta-ctn', {
+		duration: 600,
+		distance: '20px',
+		opacity: 0,
+		easing: 'ease-in-out',
+		reset: false,
+
+	} );
+	ScrollReveal().reveal( '.stat-column,.faq-item,.case-study-item', {
+		duration: 600,
+		distance: '20px',
+		opacity: 0,
+		interval: 30,
+		easing: 'ease-in-out',
+		reset: false,
+
+	} );
+	ScrollReveal().reveal( '.footer-nav li', {
+		duration: 600,
+		distance: '20px',
+		opacity: 0,
+		interval: 30,
+		easing: 'ease-in-out',
+		reset: false,
+
 	} );
 } );
 

@@ -5504,7 +5504,6 @@ body #daextlwcnf-cookie-settings-button-2:hover {
 }
 .lead-content p {
   margin-bottom: calc(var(--lfm_space_30) + 8px);
-  color: #635f5f;
 }
 
 /*-------------------------------------------------
@@ -5995,8 +5994,7 @@ body #daextlwcnf-cookie-settings-button-2:hover {
   }
   .hero-tags .tag-yellow {
     top: 6px;
-    left: auto;
-    right: 50%;
+    left: -3%;
   }
   .section-head .heading-2 {
     width: 100%;
@@ -6091,7 +6089,6 @@ body #daextlwcnf-cookie-settings-button-2:hover {
   }
   .lead-content p {
     margin-bottom: 24px;
-    color: #635f5f;
   }
   .case-study-item,
   .case-study-item:nth-child(8n+6),

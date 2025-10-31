@@ -3034,7 +3034,6 @@ Mixin for transition
 }
 .acf-block-preview .lead-content p {
   margin-bottom: calc(var(--lfm_space_30) + 8px);
-  color: #635f5f;
 }
 .acf-block-preview .service-item {
   display: grid;
@@ -4106,8 +4105,7 @@ Mixin for transition
   }
   .acf-block-preview .hero-tags .tag-yellow {
     top: 6px;
-    right: auto;
-    left: 50%;
+    right: -3%;
   }
   .acf-block-preview .section-head .heading-2 {
     width: 100%;
@@ -4202,7 +4200,6 @@ Mixin for transition
   }
   .acf-block-preview .lead-content p {
     margin-bottom: 24px;
-    color: #635f5f;
   }
   .acf-block-preview .case-study-item,
   .acf-block-preview .case-study-item:nth-child(8n+6),

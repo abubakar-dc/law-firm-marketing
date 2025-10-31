@@ -31,7 +31,7 @@ get_header();
 									<img class="video-outer" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/src/images/play-button.svg" alt="Image">
 								</div>
 							</div>
-							<a href="https://youtu.be/EngW7tLk6R8" class="hero-video-popup" aria-label="Play Video"
+							<a href="https://www.youtube.com/watch?v=EngW7tLk6R8" class="hero-video-popup" aria-label="Play Video"
 								title="Play Video">
 								<div class="sr-only">Play Video</div>
 							</a>
@@ -49,6 +49,7 @@ get_header();
 			</div>
 		</section>
 		<div class="s-156"></div>
+		<div id="about-us"></div>
 		<section class=" ctn-black">
 			<div class="s-128"></div>
 			<div class="wrapper">
@@ -139,6 +140,7 @@ get_header();
 			<div class="s-96"></div>
 
 		</section>
+		<div id="services"></div>
 		<section class="ctn-1680">
 			<div class="wrapper">
 				<div class="services-ctn">
@@ -376,6 +378,7 @@ get_header();
 			</div>
 		</section>
 		<div class="s-156"></div>
+		<div id="case-studies"></div>
 		<section class="ctn-1680">
 			<div class="wrapper">
 				<div class="section-head d-flex  align-items-end justify-content-between">
@@ -563,7 +566,7 @@ get_header();
 							<img class="video-inner-play" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/src/images/black-play-btn.svg" alt="Image">
 
 						</div>
-						<a href="https://youtu.be/EngW7tLk6R8" class="video-popup" aria-label="Play Video"
+						<a href="https://www.youtube.com/watch?v=EngW7tLk6R8" class="video-popup" aria-label="Play Video"
 							title="Play Video">
 							<div class="sr-only">Play Video</div>
 						</a>
@@ -636,6 +639,7 @@ get_header();
 			</div>
 		</section>
 		<div class="s-156"></div>
+		<div id="lets-talk"></div>
 		<section class="ctn-black">
 			<div class="s-128"></div>
 			<div class="talk-block">

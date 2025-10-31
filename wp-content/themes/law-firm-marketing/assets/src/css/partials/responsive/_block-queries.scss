@@ -1,10 +1,34 @@
+@media only screen and (min-width: 1440px) and (max-width: 1495px) {
+
+	.mid-page-cta-content .heading-2 .tag {
+    bottom: 57%;
+    left: 50%;
+
+}
+
+}
 @media only screen and (min-width: 1346px) and (max-width: 1439px) {
+	.footer-nav ul {
+		row-gap: 10px;}
+	.mid-page-cta-content .heading-2 .tag {
+    bottom: 57%;
+    left: 53%;
+}
 	.hero-default.hero-home {
 		padding-top: var(--lfm_space_96);
 	}
 }
 
 @media only screen and (max-width: 1280px) {
+.hero-tags .tag-sea-green {
+    top: 41%;
+    left: -23px;
+
+}
+	.mid-page-cta-content .heading-2 .tag {
+    bottom: 57%;
+    left: 58%;
+}
 	.lead-content {
 		width: 82.4%;
 	}
@@ -19,12 +43,14 @@
 	}
 
 	.stats-ctn .heading-2 .tag {
-		left: 100px;
+        top: -5%;
+        left: -3%;
 	}
 
 	.services-heading .tag {
-		top: 0;
-		left: 31%;
+	top: 19%;
+        left: 51%;
+
 	}
 
 	.hero-tags .tag-yellow {
@@ -35,16 +61,62 @@
 
 	.section-head .heading-2 {
 		width: 100%;
+
 	}
+	.lead-heading-area {
+	width: 100%;
+	margin-bottom: 20px;
+
+}
+
+
 }
 
 @media only screen and (min-width: 1180px) and (max-width: 1345px) {
+	.footer-nav ul {
+		row-gap: 10px;
+		li {
+			margin: 0 var(--lfm_space_30) 0 0;
+
+a,
+			a:visited {
+				font-size: 26px;
+			}
+		}
+	}
+
 }
 
 @media only screen and (min-width: 1004px) and (max-width: 1179px) {
+	.talk-heading .tag {
+
+    top: -4%;
+    left: 7%;}
+	.footer-nav ul {
+		row-gap: 10px;
+		li {
+			margin: 0 var(--lfm_space_30) 0 0;
+
+			a,
+			a:visited {
+				font-size: 18px;
+			}
+		}
+	}
 }
 
 @media only screen and (max-width: 1003px) {
+	.tag{
+		font-size: 14px;
+	}
+	.faq-ctn .section-head .heading-2 .tag {
+    top: 1%;
+    }
+
+	.mid-page-cta-content .heading-2 .tag {
+    bottom: 36%;
+    left: 41%;
+}
 	.hero-image.image-cover {
 		aspect-ratio: 2 / 1.5;
 	}
@@ -171,11 +243,10 @@
 	.inner-slider {
 		margin-top: -30px;
 	}
-
-	.services-heading .tag {
-		top: -20px;
-		left: 21%;
-	}
+.services-heading .tag {
+        top: 13px;
+        left: 52%;
+    }
 
 	.team-member:nth-child(even) {
 		.team-member-info {
@@ -186,11 +257,46 @@
 		}
 	}
 }
-
+@media only screen and (min-width: 748px) and (max-width: 840px) {
+	.faq-ctn .section-head .heading-2 .tag {
+	top: -4%;
+	left: 53%;
+}
+}
 @media only screen and (min-width: 748px) and (max-width: 1003px) {
+.talk-heading .tag {
+
+    top: -8%;
+    left: 14%;}
 }
 
 @media only screen and (max-width: 747px) {
+	.stats-ctn .heading-2 .tag {
+        top: -7%;
+        left: -3%;
+    }
+	.hero-tags .tag-sea-green {
+    top: 38%;
+    left: -23px;
+
+}
+	.tag{
+		font-size: 12px;
+	}
+	.services-heading .tag {
+        top: 4px;
+        left: 51%;
+    }
+.talk-heading .tag {
+
+    top: -25%;
+    left: 21%;}
+		.faq-ctn .section-head .heading-2 .tag {
+	top: -6%;
+	left: 53%;
+}
+
+
 	.lead-heading-area + .s-96 {
 		height: 32px !important;
 	}
@@ -240,20 +346,78 @@
 		}
 	}
 }
+@media only screen and (min-width: 463px) and (max-width: 747px) {
+    .hero-tags .tag-yellow {
+        top: -8px;
+        right: -3%;
+    }
 
-@media only screen and (min-width: 460px) and (max-width: 747px) {
+
 }
 
-@media only screen and (max-width: 459px) {
-	.team-section-heading .tag {
-		top: -30px;
-	}
+@media only screen and (min-width: 460px) and (max-width: 747px) {
+    .mid-page-cta-content .heading-2 .tag {
+        left: 42%;
+    }
+   .section-head-heading .heading-2 .tag {
+        top: -9px;
+        left: 40%;
+
+    }
+}
+
+@media only screen and (min-width: 463px) and (max-width: 659px) {
+ .hero-tags .tag-sea-green {
+        top: 30%
+    }
+	.services-heading .tag {
+        top: -12px;
+        left: 47%;
+    }
+	.stats-ctn .heading-2 .tag {
+        top: -9%;
+        left: -3%;
+    }
+}
+@media only screen and (max-width: 462px)
+{
+	    .services-heading .tag {
+        top: -12px;
+        left: 47%;
+    }
+ .hero-tags .tag-yellow {
+        top: 28%;
+        right: 35%;
+    }
 
 	.hero-tags .tag-sea-green {
 		top: auto;
+		bottom: 36px;
+	}
+}
+
+@media only screen and (max-width: 459px) {
+	    .stats-ctn .heading-2 .tag {
+        top: -10%;
+        left: -3%;
+    }
+	    .section-head-heading .heading-2 .tag {
+        top: -17px;
+        left: 40%;
+
+    }
+	.team-section-heading .tag {
+		top: -30px;
+	}
+    .talk-heading .tag {
+        top: -45%
+    }
+	.hero-tags .tag-sea-green {
+		top: auto;
 		left: -23px;
-		transform: rotate(16.96deg);
-		bottom: -20px;
+		bottom:30%
+		// transform: rotate(16.96deg);
+
 	}
 	// code will be starts from here
 }

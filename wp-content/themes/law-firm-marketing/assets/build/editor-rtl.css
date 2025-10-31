@@ -3194,12 +3194,12 @@ Mixin for transition
 }
 .acf-block-preview .talk-heading {
   position: relative;
-  align-items: center;
+  text-align: center;
 }
 .acf-block-preview .talk-heading .tag {
   position: absolute;
   top: -4%;
-  right: -8%;
+  right: 2%;
   transform: rotate(15deg);
 }
 .acf-block-preview .wrapper-talk {
@@ -3242,6 +3242,7 @@ Mixin for transition
   padding: 8px 0 8px 40px; /* space for the hint */
   font-size: 16px;
   width: 100%;
+  color: white !important;
 }
 .acf-block-preview .hint {
   position: absolute;
@@ -4080,12 +4081,33 @@ Mixin for transition
 .acf-block-preview .wpcf7-response-output {
   margin: 0 !important;
 }
+@media only screen and (min-width: 1440px) and (max-width: 1495px) {
+  .acf-block-preview .mid-page-cta-content .heading-2 .tag {
+    bottom: 57%;
+    right: 50%;
+  }
+}
 @media only screen and (min-width: 1346px) and (max-width: 1439px) {
+  .acf-block-preview .footer-nav ul {
+    row-gap: 10px;
+  }
+  .acf-block-preview .mid-page-cta-content .heading-2 .tag {
+    bottom: 57%;
+    right: 53%;
+  }
   .acf-block-preview .hero-default.hero-home {
     padding-top: var(--lfm_space_96);
   }
 }
 @media only screen and (max-width: 1280px) {
+  .acf-block-preview .hero-tags .tag-sea-green {
+    top: 41%;
+    right: -23px;
+  }
+  .acf-block-preview .mid-page-cta-content .heading-2 .tag {
+    bottom: 57%;
+    right: 58%;
+  }
   .acf-block-preview .lead-content {
     width: 82.4%;
   }
@@ -4097,11 +4119,12 @@ Mixin for transition
     width: 100%;
   }
   .acf-block-preview .stats-ctn .heading-2 .tag {
-    right: 100px;
+    top: -5%;
+    right: -3%;
   }
   .acf-block-preview .services-heading .tag {
-    top: 0;
-    right: 31%;
+    top: 19%;
+    right: 51%;
   }
   .acf-block-preview .hero-tags .tag-yellow {
     top: 6px;
@@ -4110,8 +4133,50 @@ Mixin for transition
   .acf-block-preview .section-head .heading-2 {
     width: 100%;
   }
+  .acf-block-preview .lead-heading-area {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (min-width: 1180px) and (max-width: 1345px) {
+  .acf-block-preview .footer-nav ul {
+    row-gap: 10px;
+  }
+  .acf-block-preview .footer-nav ul li {
+    margin: 0 0 0 var(--lfm_space_30);
+  }
+  .acf-block-preview .footer-nav ul li a,
+  .acf-block-preview .footer-nav ul li a:visited {
+    font-size: 26px;
+  }
+}
+@media only screen and (min-width: 1004px) and (max-width: 1179px) {
+  .acf-block-preview .talk-heading .tag {
+    top: -4%;
+    right: 7%;
+  }
+  .acf-block-preview .footer-nav ul {
+    row-gap: 10px;
+  }
+  .acf-block-preview .footer-nav ul li {
+    margin: 0 0 0 var(--lfm_space_30);
+  }
+  .acf-block-preview .footer-nav ul li a,
+  .acf-block-preview .footer-nav ul li a:visited {
+    font-size: 18px;
+  }
 }
 @media only screen and (max-width: 1003px) {
+  .acf-block-preview .tag {
+    font-size: 14px;
+  }
+  .acf-block-preview .faq-ctn .section-head .heading-2 .tag {
+    top: 1%;
+  }
+  .acf-block-preview .mid-page-cta-content .heading-2 .tag {
+    bottom: 36%;
+    right: 41%;
+  }
   .acf-block-preview .hero-image.image-cover {
     aspect-ratio: 2/1.5;
   }
@@ -4218,8 +4283,8 @@ Mixin for transition
     margin-top: -30px;
   }
   .acf-block-preview .services-heading .tag {
-    top: -20px;
-    right: 21%;
+    top: 13px;
+    right: 52%;
   }
   .acf-block-preview .team-member:nth-child(even) .team-member-info {
     order: 2;
@@ -4228,7 +4293,42 @@ Mixin for transition
     order: 1;
   }
 }
+@media only screen and (min-width: 748px) and (max-width: 840px) {
+  .acf-block-preview .faq-ctn .section-head .heading-2 .tag {
+    top: -4%;
+    right: 53%;
+  }
+}
+@media only screen and (min-width: 748px) and (max-width: 1003px) {
+  .acf-block-preview .talk-heading .tag {
+    top: -8%;
+    right: 14%;
+  }
+}
 @media only screen and (max-width: 747px) {
+  .acf-block-preview .stats-ctn .heading-2 .tag {
+    top: -7%;
+    right: -3%;
+  }
+  .acf-block-preview .hero-tags .tag-sea-green {
+    top: 38%;
+    right: -23px;
+  }
+  .acf-block-preview .tag {
+    font-size: 12px;
+  }
+  .acf-block-preview .services-heading .tag {
+    top: 4px;
+    right: 51%;
+  }
+  .acf-block-preview .talk-heading .tag {
+    top: -25%;
+    right: 21%;
+  }
+  .acf-block-preview .faq-ctn .section-head .heading-2 .tag {
+    top: -6%;
+    right: 53%;
+  }
   .acf-block-preview .lead-heading-area + .s-96 {
     height: 32px !important;
   }
@@ -4265,15 +4365,67 @@ Mixin for transition
     width: 140px;
   }
 }
+@media only screen and (min-width: 463px) and (max-width: 747px) {
+  .acf-block-preview .hero-tags .tag-yellow {
+    top: -8px;
+    left: -3%;
+  }
+}
+@media only screen and (min-width: 460px) and (max-width: 747px) {
+  .acf-block-preview .mid-page-cta-content .heading-2 .tag {
+    right: 42%;
+  }
+  .acf-block-preview .section-head-heading .heading-2 .tag {
+    top: -9px;
+    right: 40%;
+  }
+}
+@media only screen and (min-width: 463px) and (max-width: 659px) {
+  .acf-block-preview .hero-tags .tag-sea-green {
+    top: 30%;
+  }
+  .acf-block-preview .services-heading .tag {
+    top: -12px;
+    right: 47%;
+  }
+  .acf-block-preview .stats-ctn .heading-2 .tag {
+    top: -9%;
+    right: -3%;
+  }
+}
+@media only screen and (max-width: 462px) {
+  .acf-block-preview .services-heading .tag {
+    top: -12px;
+    right: 47%;
+  }
+  .acf-block-preview .hero-tags .tag-yellow {
+    top: 28%;
+    left: 35%;
+  }
+  .acf-block-preview .hero-tags .tag-sea-green {
+    top: auto;
+    bottom: 36px;
+  }
+}
 @media only screen and (max-width: 459px) {
+  .acf-block-preview .stats-ctn .heading-2 .tag {
+    top: -10%;
+    right: -3%;
+  }
+  .acf-block-preview .section-head-heading .heading-2 .tag {
+    top: -17px;
+    right: 40%;
+  }
   .acf-block-preview .team-section-heading .tag {
     top: -30px;
+  }
+  .acf-block-preview .talk-heading .tag {
+    top: -45%;
   }
   .acf-block-preview .hero-tags .tag-sea-green {
     top: auto;
     right: -23px;
-    transform: rotate(-16.96deg);
-    bottom: -20px;
+    bottom: 30%;
   }
 }
 
